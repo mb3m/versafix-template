@@ -49,7 +49,7 @@
       preheaderLinkOption {
         label: Lien désinscription;
         widget: select;
-        options: [profile_link]=Profil|[unsubscribe_link]=Désabonnement|none=Aucun;
+        options: [MB3M:DESABONNEURL]=Désabonnement|none=Aucun;
         help: Si -Aucun- est sélectionné, le texte de pré-entête sera affiché;
       }
      
