@@ -23,6 +23,12 @@ var templates = [ /*{
 	'imgDir': './template-def/img/', 
 	'destImgDir': './dist/template.fr/img/', 
 	'modelPrefix': './model/template-versafix-1.fr'
+}, {
+	'htmml': './template-def/template-versalt-1.fr.htmml',
+	'html': './dist/versalt.fr/template-versalt-1.fr.html',
+	'imgDir': './template-def/img/', 
+	'destImgDir': './dist/versalt.fr/img/', 
+	'modelPrefix': './model/template-versalt-1.fr'
 },
 ];
 

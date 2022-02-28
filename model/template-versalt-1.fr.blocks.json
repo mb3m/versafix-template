@@ -1,0 +1,549 @@
+[
+  {
+    "type": "logoBlock",
+    "customStyle": false,
+    "externalBackgroundVisible": true,
+    "image": {
+      "type": "image",
+      "src": "",
+      "url": "",
+      "alt": null
+    },
+    "imageWidth": "258",
+    "id": "",
+    "externalBackgroundColor": null,
+    "externalTextStyle": {
+      "type": "textStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "align": null
+    },
+    "backgroundColor": null,
+    "longTextStyle": {
+      "type": "longTextStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "lineHeight": null,
+      "align": null,
+      "linksColor": null
+    }
+  },
+  {
+    "type": "sideArticleBlock",
+    "customStyle": false,
+    "backgroundColor": null,
+    "titleVisible": true,
+    "buttonVisible": true,
+    "imageWidth": "166",
+    "imagePos": "left",
+    "titleTextStyle": {
+      "type": "textStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "align": null
+    },
+    "longTextStyle": {
+      "type": "longTextStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "lineHeight": null,
+      "align": null,
+      "linksColor": null
+    },
+    "buttonStyle": {
+      "type": "buttonStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "align": null,
+      "buttonColor": null,
+      "radius": null
+    },
+    "image": {
+      "type": "image",
+      "src": "",
+      "url": "",
+      "alt": null
+    },
+    "longText": "<p>Le trois septembre, &#xE0; dix heures du soir, un gendarme r&#xE9;veilla tout Verri&#xE8;res en montant la grande rue au galop ; il apportait la nouvelle que Sa Majest&#xE9; le roi de arrivait le dimanche suivant, et l&#x2019;on &#xE9;tait au mardi. Le pr&#xE9;fet autorisait, c&#x2019;est-&#xE0;-dire demandait la formation d&#x2019;une garde d&#x2019;honneur ; il fallait d&#xE9;ployer toute la pompe possible.</p>",
+    "buttonLink": {
+      "type": "link",
+      "text": "BOUTON",
+      "url": ""
+    },
+    "id": "",
+    "externalBackgroundColor": null,
+    "titleText": "Titre"
+  },
+  {
+    "type": "singleArticleBlock",
+    "customStyle": false,
+    "titleVisible": true,
+    "buttonVisible": true,
+    "imageVisible": true,
+    "imageWidth": "534",
+    "titleTextStyle": {
+      "type": "textStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "align": null
+    },
+    "longTextStyle": {
+      "type": "longTextStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "lineHeight": null,
+      "align": null,
+      "linksColor": null
+    },
+    "buttonStyle": {
+      "type": "buttonStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "align": null,
+      "buttonColor": null,
+      "radius": null
+    },
+    "image": {
+      "type": "image",
+      "src": "",
+      "url": "",
+      "alt": null
+    },
+    "longText": "<p>Le trois septembre, &#xE0; dix heures du soir, un gendarme r&#xE9;veilla tout Verri&#xE8;res en montant la grande rue au galop ; il apportait la nouvelle que Sa Majest&#xE9; le roi de arrivait le dimanche suivant, et l&#x2019;on &#xE9;tait au mardi. Le pr&#xE9;fet autorisait, c&#x2019;est-&#xE0;-dire demandait la formation d&#x2019;une garde d&#x2019;honneur ; il fallait d&#xE9;ployer toute la pompe possible.</p>",
+    "buttonLink": {
+      "type": "link",
+      "text": "BUTTON",
+      "url": ""
+    },
+    "id": "",
+    "externalBackgroundColor": null,
+    "backgroundColor": null,
+    "text": "Titre section"
+  },
+  {
+    "type": "titleBlock",
+    "customStyle": false,
+    "id": "",
+    "externalBackgroundColor": null,
+    "backgroundColor": null,
+    "bigTitleStyle": {
+      "type": "bigTitleStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "align": null
+    },
+    "text": "Titre section"
+  },
+  {
+    "type": "textBlock",
+    "customStyle": false,
+    "backgroundColor": null,
+    "longTextStyle": {
+      "type": "longTextStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "lineHeight": null,
+      "align": null,
+      "linksColor": null
+    },
+    "longText": "<p>Le trois septembre, &#xE0; dix heures du soir, un gendarme r&#xE9;veilla tout Verri&#xE8;res en montant la grande rue au galop ; il apportait la nouvelle que Sa Majest&#xE9; le roi de arrivait le dimanche suivant, et l&#x2019;on &#xE9;tait au mardi.</p>\n          <p>Le pr&#xE9;fet autorisait, c&#x2019;est-&#xE0;-dire demandait la formation d&#x2019;une garde d&#x2019;honneur ; il fallait d&#xE9;ployer toute la pompe possible.</p>",
+    "id": "",
+    "externalBackgroundColor": null
+  },
+  {
+    "type": "tripleArticleBlock",
+    "customStyle": false,
+    "backgroundColor": null,
+    "titleVisible": true,
+    "buttonVisible": true,
+    "imageVisible": true,
+    "fixedImageHeightVisible": true,
+    "titleTextStyle": {
+      "type": "textStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "align": null
+    },
+    "longTextStyle": {
+      "type": "longTextStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "lineHeight": null,
+      "align": null,
+      "linksColor": null
+    },
+    "buttonStyle": {
+      "type": "buttonStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "align": null,
+      "buttonColor": null,
+      "radius": null
+    },
+    "leftImage": {
+      "type": "image",
+      "src": "",
+      "url": "",
+      "alt": null
+    },
+    "leftLongText": "<p>Le trois septembre, &#xE0; dix heures du soir, un gendarme r&#xE9;veilla tout Verri&#xE8;res en montant la grande rue au galop ; il apportait la nouvelle que Sa Majest&#xE9; le roi de arrivait le dimanche suivant, et l&#x2019;on &#xE9;tait au mardi.</p>",
+    "leftButtonLink": {
+      "type": "buttonLink",
+      "text": "BOUTON",
+      "url": ""
+    },
+    "middleImage": {
+      "type": "image",
+      "src": "",
+      "url": "",
+      "alt": null
+    },
+    "middleLongText": "<p>Le trois septembre, &#xE0; dix heures du soir, un gendarme r&#xE9;veilla tout Verri&#xE8;res en montant la grande rue au galop ; il apportait la nouvelle que Sa Majest&#xE9; le roi de arrivait le dimanche suivant, et l&#x2019;on &#xE9;tait au mardi.</p>",
+    "middleButtonLink": {
+      "type": "buttonLink",
+      "text": "BOUTON",
+      "url": ""
+    },
+    "rightImage": {
+      "type": "image",
+      "src": "",
+      "url": "",
+      "alt": null
+    },
+    "rightLongText": "<p>Le trois septembre, &#xE0; dix heures du soir, un gendarme r&#xE9;veilla tout Verri&#xE8;res en montant la grande rue au galop ; il apportait la nouvelle que Sa Majest&#xE9; le roi de arrivait le dimanche suivant, et l&#x2019;on &#xE9;tait au mardi.</p>",
+    "rightButtonLink": {
+      "type": "buttonLink",
+      "text": "BOUTON",
+      "url": ""
+    },
+    "id": "",
+    "externalBackgroundColor": null,
+    "imageHeight": "90",
+    "leftTitleText": "Titre",
+    "middleTitleText": "Titre",
+    "rightTitleText": "Titre"
+  },
+  {
+    "type": "doubleArticleBlock",
+    "customStyle": false,
+    "backgroundColor": null,
+    "titleVisible": true,
+    "buttonVisible": true,
+    "imageVisible": true,
+    "fixedImageHeightVisible": true,
+    "titleTextStyle": {
+      "type": "textStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "align": null
+    },
+    "longTextStyle": {
+      "type": "longTextStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "lineHeight": null,
+      "align": null,
+      "linksColor": null
+    },
+    "buttonStyle": {
+      "type": "buttonStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "align": null,
+      "buttonColor": null,
+      "radius": null
+    },
+    "leftImage": {
+      "type": "image",
+      "src": "",
+      "url": "",
+      "alt": null
+    },
+    "leftLongText": "<p>Le trois septembre, &#xE0; dix heures du soir, un gendarme r&#xE9;veilla tout Verri&#xE8;res en montant la grande rue au galop ; il apportait la nouvelle que Sa Majest&#xE9; le roi de arrivait le dimanche suivant, et l&#x2019;on &#xE9;tait au mardi.</p>",
+    "leftButtonLink": {
+      "type": "buttonLink",
+      "text": "BOUTON",
+      "url": ""
+    },
+    "rightImage": {
+      "type": "image",
+      "src": "",
+      "url": "",
+      "alt": null
+    },
+    "rightLongText": "<p>Le trois septembre, &#xE0; dix heures du soir, un gendarme r&#xE9;veilla tout Verri&#xE8;res en montant la grande rue au galop ; il apportait la nouvelle que Sa Majest&#xE9; le roi de arrivait le dimanche suivant, et l&#x2019;on &#xE9;tait au mardi.</p>",
+    "rightButtonLink": {
+      "type": "buttonLink",
+      "text": "BOUTON",
+      "url": ""
+    },
+    "id": "",
+    "externalBackgroundColor": null,
+    "imageHeight": "100",
+    "leftTitleText": "Titre",
+    "rightTitleText": "Titre"
+  },
+  {
+    "type": "hrBlock",
+    "customStyle": false,
+    "id": "",
+    "externalBackgroundColor": null,
+    "backgroundColor": null,
+    "hrStyle": {
+      "type": "hrStyle",
+      "color": null,
+      "hrWidth": null,
+      "hrHeight": null
+    }
+  },
+  {
+    "type": "buttonBlock",
+    "customStyle": false,
+    "id": "",
+    "externalBackgroundColor": null,
+    "backgroundColor": null,
+    "bigButtonStyle": {
+      "type": "buttonStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "align": null,
+      "buttonColor": null,
+      "radius": null
+    },
+    "link": {
+      "type": "link",
+      "text": "BOUTON",
+      "url": ""
+    }
+  },
+  {
+    "type": "imageBlock",
+    "customStyle": false,
+    "gutterVisible": false,
+    "longTextStyle": {
+      "type": "longTextStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "lineHeight": null,
+      "align": null,
+      "linksColor": null
+    },
+    "id": "",
+    "externalBackgroundColor": null,
+    "backgroundColor": null,
+    "image": {
+      "type": "image",
+      "src": "",
+      "url": "",
+      "alt": null
+    }
+  },
+  {
+    "type": "doubleImageBlock",
+    "customStyle": false,
+    "gutterVisible": false,
+    "fixedImageHeightVisible": true,
+    "longTextStyle": {
+      "type": "longTextStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "lineHeight": null,
+      "align": null,
+      "linksColor": null
+    },
+    "id": "",
+    "externalBackgroundColor": null,
+    "backgroundColor": null,
+    "leftImage": {
+      "type": "image",
+      "src": "",
+      "url": "",
+      "alt": null
+    },
+    "imageHeight": "180",
+    "rightImage": {
+      "type": "image",
+      "src": "",
+      "url": "",
+      "alt": null
+    }
+  },
+  {
+    "type": "tripleImageBlock",
+    "customStyle": false,
+    "gutterVisible": false,
+    "fixedImageHeightVisible": true,
+    "longTextStyle": {
+      "type": "longTextStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "lineHeight": null,
+      "align": null,
+      "linksColor": null
+    },
+    "id": "",
+    "externalBackgroundColor": null,
+    "backgroundColor": null,
+    "leftImage": {
+      "type": "image",
+      "src": "",
+      "url": "",
+      "alt": null
+    },
+    "imageHeight": "160",
+    "middleImage": {
+      "type": "image",
+      "src": "",
+      "url": "",
+      "alt": null
+    },
+    "rightImage": {
+      "type": "image",
+      "src": "",
+      "url": "",
+      "alt": null
+    }
+  },
+  {
+    "type": "bigSocialBlock",
+    "customStyle": false,
+    "bigSocialIconType": "rdcol",
+    "bigSocialIconSize": "48",
+    "fbVisible": true,
+    "fbUrl": "",
+    "twVisible": true,
+    "twUrl": "",
+    "ggVisible": true,
+    "ggUrl": "",
+    "webVisible": false,
+    "webUrl": "",
+    "waVisible": false,
+    "waUrl": "",
+    "tgVisible": false,
+    "tgUrl": "",
+    "inVisible": true,
+    "inUrl": "",
+    "piVisible": false,
+    "piUrl": "",
+    "flVisible": false,
+    "flUrl": "",
+    "viVisible": false,
+    "viUrl": "",
+    "instVisible": true,
+    "instUrl": "",
+    "youVisible": true,
+    "youUrl": "",
+    "longTextStyle": {
+      "type": "longTextStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "lineHeight": null,
+      "align": null,
+      "linksColor": null
+    },
+    "longText": null,
+    "id": "",
+    "externalBackgroundColor": null,
+    "backgroundColor": null
+  },
+  {
+    "type": "shareBlock",
+    "customStyle": false,
+    "shareButtonType": "reverse",
+    "fbVisible": true,
+    "twVisible": true,
+    "inVisible": false,
+    "ggVisible": true,
+    "piVisible": false,
+    "customUrl": null,
+    "id": "",
+    "externalBackgroundColor": null,
+    "backgroundColor": null,
+    "shareButtonStyle": {
+      "type": "shareButtonStyle",
+      "face": null,
+      "iconColorType": null,
+      "color": null,
+      "size": null,
+      "align": null,
+      "buttonColor": null,
+      "radius": null
+    },
+    "fbText": "Partager\n            ",
+    "twText": "Partager\n            ",
+    "inText": "Partager\n            ",
+    "ggText": "Partager\n            ",
+    "piText": "Partager\n            "
+  },
+  {
+    "type": "spacerBlock",
+    "customStyle": false,
+    "externalBackgroundVisible": true,
+    "id": "",
+    "externalBackgroundColor": null,
+    "spacerSize": "24",
+    "backgroundColor": null
+  },
+  {
+    "type": "socialBlock",
+    "customStyle": false,
+    "socialIconType": "colors",
+    "fbVisible": true,
+    "fbUrl": "",
+    "twVisible": true,
+    "twUrl": "",
+    "ggVisible": true,
+    "ggUrl": "",
+    "webVisible": false,
+    "webUrl": "",
+    "waVisible": false,
+    "waUrl": "",
+    "tgVisible": false,
+    "tgUrl": "",
+    "inVisible": false,
+    "inUrl": "",
+    "piVisible": false,
+    "piUrl": "",
+    "flVisible": false,
+    "flUrl": "",
+    "viVisible": false,
+    "viUrl": "",
+    "instVisible": false,
+    "instUrl": "",
+    "youVisible": false,
+    "youUrl": "",
+    "longTextStyle": {
+      "type": "longTextStyle",
+      "face": null,
+      "color": null,
+      "size": null,
+      "lineHeight": null,
+      "align": null,
+      "linksColor": null
+    },
+    "longText": "<p>Adresse et <a href>Contacts</a></p>",
+    "backgroundColor": null,
+    "id": ""
+  }
+]
