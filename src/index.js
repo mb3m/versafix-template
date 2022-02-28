@@ -5,7 +5,7 @@ var makeThumbs = require('./makeThumbs');
 var checkTemplateDefs = require('./checkTemplateDefs');
 var fse = require('fs-extra');
 
-var templates = [ { 
+var templates = [ /*{ 
 	'htmml': './template-def/template-versafix-1.htmml', 
 	'html': './dist/template/template-versafix-1.html',
 	'imgDir': './template-def/img/', 
@@ -17,7 +17,7 @@ var templates = [ {
 	'imgDir': './template-def/img/', 
 	'destImgDir': './dist/template.it/img/', 
 	'modelPrefix': './model/template-versafix-1.it'
-}, {
+},*/ {
 	'htmml': './template-def/template-versafix-1.fr.htmml',
 	'html': './dist/template.fr/template-versafix-1.fr.html',
 	'imgDir': './template-def/img/', 
