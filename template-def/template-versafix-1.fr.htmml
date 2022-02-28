@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <title style="-ko-bind-text: @titleText">TITLE</title>
+  <title style="-ko-bind-text: @titleText">TITRE</title>
   <style type="text/css">
     @supports -ko-blockdefs {
       id { widget: id }
@@ -810,11 +810,11 @@
       <block-inner inner-padding="0" inner-class="vb-row">
         <columns td-styles="padding: 0 9px"><!--
           --><column-content width="276" spacing="9">
-            <linked-text if="preheaderLinkOption neq 'none'" href="[unsubscribe_link]" href-prop="preheaderLinkOption" editable="unsubscribeText">Désinscription</linked-text>
+            <linked-text if="preheaderLinkOption neq 'none'" href="[MB3M:DESABONNEURL]" href-prop="preheaderLinkOption" editable="unsubscribeText">Désinscription</linked-text>
             <text false if="preheaderLinkOption eq 'none'" content="preheaderText"></text>
           </column-content><!--
           --><column-content width="276" spacing="9" class="mobile-hide">
-            <linked-text align="right" href="[show_link]" editable="webversionText">Afficher dans votre navigateur</linked-text>
+            <linked-text align="right" href="[MB3M:ENLIGNEURL]" editable="webversionText">Afficher dans votre navigateur</linked-text>
           </column-content><!--
         --></columns>
       </block-inner>
@@ -1084,8 +1084,8 @@
   <block name="footerBlock" label="Unsubscribe Block" theme="frameTheme">
     <block-inner inner-padding="0" inner-class="vb-row">
       <content spacing="9" width="552" td-styles="padding: 0 9px">
-        <long-text editable="longText" fixed-align="center"><p>Email envoyé à <a href="mailto:[mail]">[mail]</a></p></long-text>
-        <linked-text align="center" href="[unsubscribe_link]" editable="disiscrivitiText"
+        <long-text editable="longText" fixed-align="center"><p>Email envoyé à <a href="mailto:[MB3M:EMAIL]">[MB3M:EMAIL]</a></p></long-text>
+        <linked-text align="center" href="[MB3M:DESABONNEURL]" editable="disiscrivitiText"
           color-prop="Color.readability(linkStyle.color, backgroundColor) gt 2 ? linkStyle.color : (Color.isReadable('#ffffff', backgroundColor) ? '#ffffff' : '#000000')">Désinscription</linked-text>
         <linked-img width="170" align="center" false if="_root_.sponsor.visible" content="_root_.sponsor" src="img/sponsor.gif" alt="sponsor" />
       </content>
