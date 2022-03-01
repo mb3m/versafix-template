@@ -1,0 +1,697 @@
+
+
+<!-- ################### msc-tmpl-anonymous-undefined-0 #################### -->
+
+
+        /* What it does: Tells the email client that only light styles are provided but the client can transform them to dark. A duplicate of meta color-scheme meta tag above. */
+        <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->:root{
+          color-scheme: light;
+          supported-color-schemes: light;
+        }
+
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->html, <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->body{
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->*{
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->div[style*="margin: 16px 0"]{
+            margin: 0 !important;
+        }
+
+        /* What it does: forces Samsung Android mail clients to use the entire viewport */
+        <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->#MessageViewBody, <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->#MessageWebViewDiv{
+            width: 100% !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->table, <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->td{
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Replaces default bold style. */
+        <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->th{
+        	font-weight: normal;
+        }
+
+        /* What it does: Fixes webkit padding issue. */
+        <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->table{
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+        <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->a{
+            text-decoration: none;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->img{
+            -ms-interpolation-mode:bicubic;
+        }
+
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->a[x-apple-data-detectors], <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->.unstyle-auto-detected-links a, <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->.aBn{
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+        <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->.im{
+            color: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+        <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->.a6S{
+           display: none !important;
+           opacity: 0.01 !important;
+		}
+		/* If the above doesn't work, add a .g-img class to any image in question. */
+		<!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->img.g-img + div{
+		   display: none !important;
+		}
+
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->u ~ div .email-container{
+                min-width: 320px !important;
+            }
+        }
+        /* iPhone 6, 6S, 7, 8, and X */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->u ~ div .email-container{
+                min-width: 375px !important;
+            }
+        }
+        /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) {
+            <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->u ~ div .email-container{
+                min-width: 414px !important;
+            }
+        }
+
+    
+
+<!-- ################### msc-tmpl-anonymous-undefined-5912 #################### -->
+
+
+        /* What it does: Hover styles for buttons */
+        <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->.button-td, <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->.button-a{
+            transition: all 100ms ease-in;
+        }
+	    <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->.button-td-primary:hover, <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->.button-a-primary:hover{
+	        background: #555555 !important;
+	        border-color: #555555 !important;
+	    }
+
+        /* Media Queries */
+        @media screen and (max-width: 600px) {
+
+            <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->.email-container{
+                width: 100% !important;
+                margin: auto !important;
+            }
+
+            /* What it does: Forces table cells into full-width rows. */
+            <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->.stack-column, <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->.stack-column-center{
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+            /* And center justify these ones. */
+            <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->.stack-column-center{
+                text-align: center !important;
+            }
+
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->.center-on-narrow{
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+            <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->table.center-on-narrow{
+                display: inline-block !important;
+            }
+
+            /* What it does: Adjust typography on small screens to improve readability */
+            <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->.email-container p{
+                font-size: 17px !important;
+            }
+        }
+
+        /* Dark Mode Styles : BEGIN */
+        @media (prefers-color-scheme: dark) {
+            <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->.email-bg{
+                background: #111111 !important;
+            }
+            <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->.darkmode-bg{
+                background: #222222 !important;
+            }
+            <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->h1, <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->h2, <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->h3, <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->p, <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->li, <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->.darkmode-text, <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->.email-container a:not([class]){
+                color: #F7F7F9 !important;
+            }
+            <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->td.button-td-primary, <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->td.button-td-primary a{
+                background: #ffffff !important;
+                border-color: #ffffff !important;
+                color: #222222 !important;
+            }
+            <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->td.button-td-primary:hover, <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->td.button-td-primary a:hover{
+                background: #cccccc !important;
+                border-color: #cccccc !important;
+            }
+            <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->.footer td{
+                color: #aaaaaa !important;
+            }
+            <!-- ko text: templateMode =='wysiwyg' ? '#main-wysiwyg-area ' : '' --><!-- /ko -->.darkmode-fullbleed-bg{
+                background-color: #0F3016 !important;
+            }
+        }
+        /* Dark Mode Styles : END */
+    
+
+<!-- ################### msc-tmpl-headerBlock-show-10801 #################### -->
+<tr data-bind="attr: { id: id }, uniqueId: $data">
+                <td replacedstyle="padding: 20px 0; text-align: center" data-bind="virtualAttrStyle: &apos;padding: 20px 0; &apos;+&apos;text-align: center;&apos;+&apos;&apos;" style="padding: 20px 0; text-align: center">
+                    <img src="https://via.placeholder.com/200x50" width="200" height="50" alt="alt_text" border="0" replacedstyle="height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;" data-bind="virtualAttrStyle: &apos;height: auto; &apos;+&apos;background: #dddddd; &apos;+&apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 15px; &apos;+&apos;color: #555555;&apos;+&apos;&apos;" style="height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
+                </td>
+            </tr>
+
+<!-- ################### msc-tmpl-heroImageBlock-show-11797 #################### -->
+<tr data-bind="attr: { id: id }, uniqueId: $data">
+                <td replacedstyle="background-color: #ffffff;" class="darkmode-bg" data-bind="virtualAttrStyle: &apos;background-color: #ffffff;&apos;+&apos;&apos;" style="background-color: #ffffff;">
+                    <img src="https://via.placeholder.com/1200x600" width="600" height alt="alt_text" border="0" replacedstyle="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;" class="g-img" data-bind="virtualAttrStyle: &apos;width: 100%; &apos;+&apos;max-width: 600px; &apos;+&apos;height: auto; &apos;+&apos;background: #dddddd; &apos;+&apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 15px; &apos;+&apos;color: #555555; &apos;+&apos;margin: auto; &apos;+&apos;display: block;&apos;+&apos;&apos;" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;">
+                </td>
+            </tr>
+
+<!-- ################### msc-tmpl-oneColumnTextButtonBlock-show-13021 #################### -->
+<tr data-bind="attr: { id: id }, uniqueId: $data">
+                <td replacedstyle="background-color: #ffffff;" class="darkmode-bg" data-bind="virtualAttrStyle: &apos;background-color: #ffffff;&apos;+&apos;&apos;" style="background-color: #ffffff;">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tbody><tr>
+                            <td replacedstyle="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" data-bind="virtualAttrStyle: &apos;padding: 20px; &apos;+&apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 20px; &apos;+&apos;color: #555555;&apos;+&apos;&apos;" style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                <h1 replacedstyle="margin: 0 0 10px; font-size: 25px; line-height: 30px; color: #333333; font-weight: normal;" data-bind="virtualAttrStyle: &apos;margin: 0 0 10px; &apos;+&apos;font-size: 25px; &apos;+&apos;line-height: 30px; &apos;+&apos;color: #333333; &apos;+&apos;font-weight: normal;&apos;+&apos;&apos;" style="margin: 0 0 10px; font-size: 25px; line-height: 30px; color: #333333; font-weight: normal;">Praesent laoreet malesuada&#xA0;cursus.</h1>
+                                <p replacedstyle="margin: 0 0 10px;" data-bind="virtualAttrStyle: &apos;margin: 0 0 10px;&apos;+&apos;&apos;" style="margin: 0 0 10px;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&#xA0;erat.</p>
+                                <ul replacedstyle="padding: 0; margin: 0; list-style-type: disc;" data-bind="virtualAttrStyle: &apos;padding: 0; &apos;+&apos;margin: 0; &apos;+&apos;list-style-type: disc;&apos;+&apos;&apos;" style="padding: 0; margin: 0; list-style-type: disc;">
+									<li replacedstyle="margin:0 0 10px 20px;" class="list-item-first" data-bind="virtualAttrStyle: &apos;margin: 0 0 10px 20px;&apos;+&apos;&apos;" style="margin:0 0 10px 20px;">A list item.</li>
+									<li replacedstyle="margin:0 0 10px 20px;" data-bind="virtualAttrStyle: &apos;margin: 0 0 10px 20px;&apos;+&apos;&apos;" style="margin:0 0 10px 20px;">Another list item here.</li>
+									<li replacedstyle="margin: 0 0 0 20px;" class="list-item-last" data-bind="virtualAttrStyle: &apos;margin: 0 0 0 20px;&apos;+&apos;&apos;" style="margin: 0 0 0 20px;">Everyone gets a list item, list items for everyone!</li>
+								</ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td replacedstyle="padding: 0 20px 20px;" data-bind="virtualAttrStyle: &apos;padding: 0 20px 20px;&apos;+&apos;&apos;" style="padding: 0 20px 20px;">
+                                <!-- Button : BEGIN -->
+                                <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" replacedstyle="margin: auto;" data-bind="virtualAttrStyle: &apos;margin: auto;&apos;+&apos;&apos;" style="margin: auto;">
+                                    <tbody><tr>
+                                        <td class="button-td button-td-primary" replacedstyle="border-radius: 4px; background: #222222;" data-bind="virtualAttrStyle: &apos;border-radius: 4px; &apos;+&apos;background: #222222;&apos;+&apos;&apos;" style="border-radius: 4px; background: #222222;">
+											<a class="button-a button-a-primary" href="https://google.com/" replacedstyle="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;" data-bind="virtualAttrStyle: &apos;background: #222222; &apos;+&apos;border: 1px solid #000000; &apos;+&apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 15px; &apos;+&apos;text-decoration: none; &apos;+&apos;padding: 13px 17px; &apos;+&apos;color: #ffffff; &apos;+&apos;display: block; &apos;+&apos;border-radius: 4px;&apos;+&apos;&apos;, wysiwygHref: &apos;https://google.com/&apos;" style="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Centered Primary Button</a>
+										</td>
+                                    </tr>
+                                </tbody></table>
+                                <!-- Button : END -->
+                            </td>
+                        </tr>
+
+                    </tbody></table>
+                </td>
+            </tr>
+
+<!-- ################### msc-tmpl-backgroundImageTextBlock-show-17996 #################### -->
+<tr data-bind="attr: { id: id }, uniqueId: $data">
+                <!-- Bulletproof Background Images c/o https://backgrounds.cm -->
+                <td valign="middle" replacedstyle="text-align: center; background-image: url(&apos;https://via.placeholder.com/600x230/222222/666666&apos;); background-color: #222222; background-position: center center !important; background-size: cover !important;" data-bind="virtualAttrStyle: &apos;text-align: center; &apos;+&apos;background-image: url(\&apos;https://via.placeholder.com/600x230/222222/666666\&apos;); &apos;+&apos;background-color: #222222; &apos;+&apos;background-position: center center !important; &apos;+&apos;background-size: cover !important;&apos;+&apos;&apos;" style="text-align: center; background-image: url(&apos;https://via.placeholder.com/600x230/222222/666666&apos;); background-color: #222222; background-position: center center !important; background-size: cover !important;">
+	                <replacedcc condition="gte mso 9" style="display: none">
+	                <!-- cc:bo:v:rect --><cc xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" replacedstyle="width:600px;height:175px; background-position: center center !important;" data-bind="virtualAttrStyle: &apos;width: 600px; &apos;+&apos;height: 175px; &apos;+&apos;background-position: center center !important;&apos;+&apos;&apos;" style="width:600px;height:175px; background-position: center center !important;">
+	                <!-- cc:bo:v:fill --><cc type="tile" src="https://via.placeholder.com/600x230/222222/666666" color="#222222"><!-- cc:sc -->
+	                <!-- cc:bo:v:textbox --><cc inset="0,0,0,0">
+	                <!-- cc:end --></cc></cc></cc></replacedcc>
+	                <div>
+	                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+	                        <tbody><tr>
+	                            <td valign="middle" replacedstyle="text-align: center; padding: 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #ffffff;" data-bind="virtualAttrStyle: &apos;text-align: center; &apos;+&apos;padding: 40px; &apos;+&apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 20px; &apos;+&apos;color: #ffffff;&apos;+&apos;&apos;" style="text-align: center; padding: 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #ffffff;">
+	                                <p replacedstyle="margin: 0;" data-bind="virtualAttrStyle: &apos;margin: 0;&apos;+&apos;&apos;" style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&#xA0;erat.</p>
+	                            </td>
+	                        </tr>
+	                    </tbody></table>
+	                </div>
+	                <replacedcc condition="gte mso 9" style="display: none">
+	                <!-- cc:bc:v:textbox --><!-- cc:ac:v:textbox -->
+	                <!-- cc:bc:v:rect --><!-- cc:ac:v:rect -->
+	                </replacedcc>
+	            </td>
+	        </tr>
+
+<!-- ################### msc-tmpl-twoEvenColumnsBlock-show-21360 #################### -->
+<tr data-bind="attr: { id: id }, uniqueId: $data">
+	            <td replacedstyle="padding: 10px; background-color: #ffffff;" class="darkmode-bg" data-bind="virtualAttrStyle: &apos;padding: 10px; &apos;+&apos;background-color: #ffffff;&apos;+&apos;&apos;" style="padding: 10px; background-color: #ffffff;">
+	                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+	                    <tbody><tr>
+	                        <!-- Column : BEGIN -->
+	                        <th valign="top" width="50%" class="stack-column-center">
+	                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+	                                <tbody><tr>
+	                                    <td replacedstyle="padding: 10px; text-align: center" data-bind="virtualAttrStyle: &apos;padding: 10px; &apos;+&apos;text-align: center;&apos;+&apos;&apos;" style="padding: 10px; text-align: center">
+	                                        <img src="https://via.placeholder.com/270" width="270" height alt="alt_text" border="0" replacedstyle="width: 100%; max-width: 270px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;" data-bind="virtualAttrStyle: &apos;width: 100%; &apos;+&apos;max-width: 270px; &apos;+&apos;height: auto; &apos;+&apos;background: #dddddd; &apos;+&apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 15px; &apos;+&apos;color: #555555;&apos;+&apos;&apos;" style="width: 100%; max-width: 270px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
+	                                    </td>
+	                                </tr>
+	                                <tr>
+	                                    <td replacedstyle="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow" data-bind="virtualAttrStyle: &apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 20px; &apos;+&apos;color: #555555; &apos;+&apos;padding: 0 10px 10px; &apos;+&apos;text-align: left;&apos;+&apos;&apos;" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;">
+	                                        <p replacedstyle="margin: 0;" data-bind="virtualAttrStyle: &apos;margin: 0;&apos;+&apos;&apos;" style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+	                                    </td>
+	                                </tr>
+	                            </tbody></table>
+	                        </th>
+	                        <!-- Column : END -->
+	                        <!-- Column : BEGIN -->
+	                        <th valign="top" width="50%" class="stack-column-center">
+	                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+	                                <tbody><tr>
+	                                    <td replacedstyle="padding: 10px; text-align: center" data-bind="virtualAttrStyle: &apos;padding: 10px; &apos;+&apos;text-align: center;&apos;+&apos;&apos;" style="padding: 10px; text-align: center">
+	                                        <img src="https://via.placeholder.com/270" width="270" height alt="alt_text" border="0" replacedstyle="width: 100%; max-width: 270px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;" data-bind="virtualAttrStyle: &apos;width: 100%; &apos;+&apos;max-width: 270px; &apos;+&apos;height: auto; &apos;+&apos;background: #dddddd; &apos;+&apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 15px; &apos;+&apos;color: #555555;&apos;+&apos;&apos;" style="width: 100%; max-width: 270px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
+	                                    </td>
+	                                </tr>
+	                                <tr>
+	                                    <td replacedstyle="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow" data-bind="virtualAttrStyle: &apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 20px; &apos;+&apos;color: #555555; &apos;+&apos;padding: 0 10px 10px; &apos;+&apos;text-align: left;&apos;+&apos;&apos;" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;">
+	                                        <p replacedstyle="margin: 0;" data-bind="virtualAttrStyle: &apos;margin: 0;&apos;+&apos;&apos;" style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+	                                    </td>
+	                                </tr>
+	                            </tbody></table>
+	                        </th>
+	                        <!-- Column : END -->
+	                    </tr>
+	                </tbody></table>
+	            </td>
+	        </tr>
+
+<!-- ################### msc-tmpl-threeEvenColumnsBlock-show-26910 #################### -->
+<tr data-bind="attr: { id: id }, uniqueId: $data">
+	            <td replacedstyle="padding: 10px; background-color: #ffffff;" class="darkmode-bg" data-bind="virtualAttrStyle: &apos;padding: 10px; &apos;+&apos;background-color: #ffffff;&apos;+&apos;&apos;" style="padding: 10px; background-color: #ffffff;">
+	                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+	                    <tbody><tr>
+	                        <!-- Column : BEGIN -->
+	                        <th valign="top" width="33.33%" class="stack-column-center">
+	                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+	                                <tbody><tr>
+	                                    <td replacedstyle="padding: 10px; text-align: center" data-bind="virtualAttrStyle: &apos;padding: 10px; &apos;+&apos;text-align: center;&apos;+&apos;&apos;" style="padding: 10px; text-align: center">
+	                                        <img src="https://via.placeholder.com/170" width="170" height alt="alt_text" border="0" replacedstyle="width: 100%; max-width: 170px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;" data-bind="virtualAttrStyle: &apos;width: 100%; &apos;+&apos;max-width: 170px; &apos;+&apos;height: auto; &apos;+&apos;background: #dddddd; &apos;+&apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 15px; &apos;+&apos;color: #555555;&apos;+&apos;&apos;" style="width: 100%; max-width: 170px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
+	                                    </td>
+	                                </tr>
+	                                <tr>
+	                                    <td replacedstyle="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow" data-bind="virtualAttrStyle: &apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 20px; &apos;+&apos;color: #555555; &apos;+&apos;padding: 0 10px 10px; &apos;+&apos;text-align: left;&apos;+&apos;&apos;" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;">
+	                                        <p replacedstyle="margin: 0;" data-bind="virtualAttrStyle: &apos;margin: 0;&apos;+&apos;&apos;" style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+	                                    </td>
+	                                </tr>
+	                            </tbody></table>
+	                        </th>
+	                        <!-- Column : END -->
+	                        <!-- Column : BEGIN -->
+	                        <th valign="top" width="33.33%" class="stack-column-center">
+	                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+	                                <tbody><tr>
+	                                    <td replacedstyle="padding: 10px; text-align: center" data-bind="virtualAttrStyle: &apos;padding: 10px; &apos;+&apos;text-align: center;&apos;+&apos;&apos;" style="padding: 10px; text-align: center">
+	                                        <img src="https://via.placeholder.com/170" width="170" height alt="alt_text" border="0" replacedstyle="width: 100%; max-width: 170px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;" data-bind="virtualAttrStyle: &apos;width: 100%; &apos;+&apos;max-width: 170px; &apos;+&apos;height: auto; &apos;+&apos;background: #dddddd; &apos;+&apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 15px; &apos;+&apos;color: #555555;&apos;+&apos;&apos;" style="width: 100%; max-width: 170px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
+	                                    </td>
+	                                </tr>
+	                                <tr>
+	                                    <td replacedstyle="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow" data-bind="virtualAttrStyle: &apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 20px; &apos;+&apos;color: #555555; &apos;+&apos;padding: 0 10px 10px; &apos;+&apos;text-align: left;&apos;+&apos;&apos;" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;">
+	                                        <p replacedstyle="margin: 0;" data-bind="virtualAttrStyle: &apos;margin: 0;&apos;+&apos;&apos;" style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+	                                    </td>
+	                                </tr>
+	                            </tbody></table>
+	                        </th>
+	                        <!-- Column : END -->
+	                        <!-- Column : BEGIN -->
+	                        <th valign="top" width="33.33%" class="stack-column-center">
+	                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+	                                <tbody><tr>
+	                                    <td replacedstyle="padding: 10px; text-align: center" data-bind="virtualAttrStyle: &apos;padding: 10px; &apos;+&apos;text-align: center;&apos;+&apos;&apos;" style="padding: 10px; text-align: center">
+	                                        <img src="https://via.placeholder.com/170" width="170" height alt="alt_text" border="0" replacedstyle="width: 100%; max-width: 170px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;" data-bind="virtualAttrStyle: &apos;width: 100%; &apos;+&apos;max-width: 170px; &apos;+&apos;height: auto; &apos;+&apos;background: #dddddd; &apos;+&apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 15px; &apos;+&apos;color: #555555;&apos;+&apos;&apos;" style="width: 100%; max-width: 170px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
+	                                    </td>
+	                                </tr>
+	                                <tr>
+	                                    <td replacedstyle="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow" data-bind="virtualAttrStyle: &apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 20px; &apos;+&apos;color: #555555; &apos;+&apos;padding: 0 10px 10px; &apos;+&apos;text-align: left;&apos;+&apos;&apos;" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;">
+	                                        <p replacedstyle="margin: 0;" data-bind="virtualAttrStyle: &apos;margin: 0;&apos;+&apos;&apos;" style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+	                                    </td>
+	                                </tr>
+	                            </tbody></table>
+	                        </th>
+	                        <!-- Column : END -->
+	                    </tr>
+	                </tbody></table>
+	            </td>
+	        </tr>
+
+<!-- ################### msc-tmpl-imageLeftBlock-show-34931 #################### -->
+<tr data-bind="attr: { id: id }, uniqueId: $data">
+	            <td dir="ltr" width="100%" replacedstyle="padding: 10px; background-color: #ffffff;" class="darkmode-bg" data-bind="virtualAttrStyle: &apos;padding: 10px; &apos;+&apos;background-color: #ffffff;&apos;+&apos;&apos;" style="padding: 10px; background-color: #ffffff;">
+	                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+	                    <tbody><tr>
+	                        <!-- Column : BEGIN -->
+	                        <th width="33.33%" class="stack-column-center">
+	                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+	                                <tbody><tr>
+	                                    <td dir="ltr" valign="top" replacedstyle="padding: 0 10px;" data-bind="virtualAttrStyle: &apos;padding: 0 10px;&apos;+&apos;&apos;" style="padding: 0 10px;">
+	                                        <img src="https://via.placeholder.com/170" width="170" height="170" alt="alt_text" border="0" class="center-on-narrow" replacedstyle="height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;" data-bind="virtualAttrStyle: &apos;height: auto; &apos;+&apos;background: #dddddd; &apos;+&apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 15px; &apos;+&apos;color: #555555;&apos;+&apos;&apos;" style="height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
+	                                    </td>
+	                                </tr>
+	                            </tbody></table>
+	                        </th>
+	                        <!-- Column : END -->
+	                        <!-- Column : BEGIN -->
+	                        <th width="66.66%" class="stack-column-center">
+	                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+	                                <tbody><tr>
+	                                    <td dir="ltr" valign="top" replacedstyle="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px; text-align: left;" class="center-on-narrow" data-bind="virtualAttrStyle: &apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 20px; &apos;+&apos;color: #555555; &apos;+&apos;padding: 10px; &apos;+&apos;text-align: left;&apos;+&apos;&apos;" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px; text-align: left;">
+	                                        <h2 replacedstyle="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;" data-bind="virtualAttrStyle: &apos;margin: 0 0 10px 0; &apos;+&apos;font-family: sans-serif; &apos;+&apos;font-size: 18px; &apos;+&apos;line-height: 22px; &apos;+&apos;color: #333333; &apos;+&apos;font-weight: bold;&apos;+&apos;&apos;" style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;">Class aptent taciti sociosqu</h2>
+	                                        <p replacedstyle="margin: 0 0 10px 0;" data-bind="virtualAttrStyle: &apos;margin: 0 0 10px 0;&apos;+&apos;&apos;" style="margin: 0 0 10px 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+	                                        <!-- Button : BEGIN -->
+	                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" replacedstyle="float:left;" data-bind="virtualAttrStyle: &apos;float: left;&apos;+&apos;&apos;" style="float:left;">
+	                                            <tbody><tr>
+		                                            <td class="button-td button-td-primary" replacedstyle="border-radius: 4px; background: #222222;" data-bind="virtualAttrStyle: &apos;border-radius: 4px; &apos;+&apos;background: #222222;&apos;+&apos;&apos;" style="border-radius: 4px; background: #222222;">
+														<a class="button-a button-a-primary" href="https://google.com/" replacedstyle="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;" data-bind="virtualAttrStyle: &apos;background: #222222; &apos;+&apos;border: 1px solid #000000; &apos;+&apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 15px; &apos;+&apos;text-decoration: none; &apos;+&apos;padding: 13px 17px; &apos;+&apos;color: #ffffff; &apos;+&apos;display: block; &apos;+&apos;border-radius: 4px;&apos;+&apos;&apos;, wysiwygHref: &apos;https://google.com/&apos;" style="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Primary Button</a>
+													</td>
+	                                          </tr>
+	                                      </tbody></table>
+	                                      <!-- Button : END -->
+	                                    </td>
+	                                </tr>
+	                            </tbody></table>
+	                        </th>
+	                        <!-- Column : END -->
+	                    </tr>
+	                </tbody></table>
+	            </td>
+	        </tr>
+
+<!-- ################### msc-tmpl-imageRightBlock-show-40678 #################### -->
+<tr data-bind="attr: { id: id }, uniqueId: $data">
+	            <td dir="rtl" width="100%" replacedstyle="padding: 10px; background-color: #ffffff;" class="darkmode-bg" data-bind="virtualAttrStyle: &apos;padding: 10px; &apos;+&apos;background-color: #ffffff;&apos;+&apos;&apos;" style="padding: 10px; background-color: #ffffff;">
+	                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+	                    <tbody><tr>
+	                        <!-- Column : BEGIN -->
+	                        <th width="33.33%" class="stack-column-center">
+	                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+	                                <tbody><tr>
+	                                    <td dir="ltr" valign="top" replacedstyle="padding: 0 10px;" data-bind="virtualAttrStyle: &apos;padding: 0 10px;&apos;+&apos;&apos;" style="padding: 0 10px;">
+	                                        <img src="https://via.placeholder.com/170" width="170" height="170" alt="alt_text" border="0" class="center-on-narrow" replacedstyle="height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;" data-bind="virtualAttrStyle: &apos;height: auto; &apos;+&apos;background: #dddddd; &apos;+&apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 15px; &apos;+&apos;color: #555555;&apos;+&apos;&apos;" style="height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
+	                                    </td>
+	                                </tr>
+	                            </tbody></table>
+	                        </th>
+	                        <!-- Column : END -->
+	                        <!-- Column : BEGIN -->
+	                        <th width="66.66%" class="stack-column-center">
+	                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+	                                <tbody><tr>
+	                                    <td dir="ltr" valign="top" replacedstyle="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px; text-align: left;" class="center-on-narrow" data-bind="virtualAttrStyle: &apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 20px; &apos;+&apos;color: #555555; &apos;+&apos;padding: 10px; &apos;+&apos;text-align: left;&apos;+&apos;&apos;" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px; text-align: left;">
+	                                        <h2 replacedstyle="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;" data-bind="virtualAttrStyle: &apos;margin: 0 0 10px 0; &apos;+&apos;font-family: sans-serif; &apos;+&apos;font-size: 18px; &apos;+&apos;line-height: 22px; &apos;+&apos;color: #333333; &apos;+&apos;font-weight: bold;&apos;+&apos;&apos;" style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;">Class aptent taciti sociosqu</h2>
+	                                        <p replacedstyle="margin: 0 0 10px 0;" data-bind="virtualAttrStyle: &apos;margin: 0 0 10px 0;&apos;+&apos;&apos;" style="margin: 0 0 10px 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+	                                        <!-- Button : BEGIN -->
+	                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" replacedstyle="float:left;" data-bind="virtualAttrStyle: &apos;float: left;&apos;+&apos;&apos;" style="float:left;">
+	                                            <tbody><tr>
+		                                            <td class="button-td button-td-primary" replacedstyle="border-radius: 4px; background: #222222;" data-bind="virtualAttrStyle: &apos;border-radius: 4px; &apos;+&apos;background: #222222;&apos;+&apos;&apos;" style="border-radius: 4px; background: #222222;">
+														<a class="button-a button-a-primary" href="https://google.com/" replacedstyle="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;" data-bind="virtualAttrStyle: &apos;background: #222222; &apos;+&apos;border: 1px solid #000000; &apos;+&apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 15px; &apos;+&apos;text-decoration: none; &apos;+&apos;padding: 13px 17px; &apos;+&apos;color: #ffffff; &apos;+&apos;display: block; &apos;+&apos;border-radius: 4px;&apos;+&apos;&apos;, wysiwygHref: &apos;https://google.com/&apos;" style="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Primary Button</a>
+													</td>
+	                                            </tr>
+	                                        </tbody></table>
+	                                        <!-- Button : END -->
+	                                    </td>
+	                                </tr>
+	                            </tbody></table>
+	                        </th>
+	                        <!-- Column : END -->
+	                    </tr>
+	                </tbody></table>
+	            </td>
+	        </tr>
+
+<!-- ################### msc-tmpl-spacerBlock-show-46432 #################### -->
+<tr data-bind="attr: { id: id }, uniqueId: $data">
+	            <td aria-hidden="true" height="40" replacedstyle="font-size: 0px; line-height: 0px;" data-bind="virtualAttrStyle: &apos;font-size: 0px; &apos;+&apos;line-height: 0px;&apos;+&apos;&apos;" style="font-size: 0px; line-height: 0px;">
+	                &#xA0;
+	            </td>
+	        </tr>
+
+<!-- ################### msc-tmpl-oneColumnTextBlock-show-46870 #################### -->
+<tr data-bind="attr: { id: id }, uniqueId: $data">
+	            <td replacedstyle="background-color: #ffffff;" class="darkmode-bg" data-bind="virtualAttrStyle: &apos;background-color: #ffffff;&apos;+&apos;&apos;" style="background-color: #ffffff;">
+	                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+	                    <tbody><tr>
+	                        <td replacedstyle="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" data-bind="virtualAttrStyle: &apos;padding: 20px; &apos;+&apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 20px; &apos;+&apos;color: #555555;&apos;+&apos;&apos;" style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+	                            <p replacedstyle="margin: 0;" data-bind="virtualAttrStyle: &apos;margin: 0;&apos;+&apos;&apos;" style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&#xA0;erat.</p>
+	                        </td>
+	                    </tr>
+	                </tbody></table>
+	            </td>
+	        </tr>
+
+<!-- ################### msc-tmpl-anonymous-undefined-48359 #################### -->
+<!-- ko block: mainBlocks, virtualAttrStyle: 'margin: auto;'+'' -->
+
+	        <!-- Email Header : BEGIN -->
+            <tbody><!-- ko block: { data: headerBlock, template: 'block' } --><!-- /ko -->
+	        <!-- Email Header : END -->
+
+            <!-- Hero Image, Flush : BEGIN -->
+            <!-- ko block: { data: heroImageBlock, template: 'block' } --><!-- /ko -->
+            <!-- Hero Image, Flush : END -->
+
+            <!-- 1 Column Text + Button : BEGIN -->
+            <!-- ko block: { data: oneColumnTextButtonBlock, template: 'block' } --><!-- /ko -->
+            <!-- 1 Column Text + Button : END -->
+
+            <!-- Background Image with Text : BEGIN -->
+            <!-- ko block: { data: backgroundImageTextBlock, template: 'block' } --><!-- /ko -->
+	        <!-- Background Image with Text : END -->
+
+	        <!-- 2 Even Columns : BEGIN -->
+	        <!-- ko block: { data: twoEvenColumnsBlock, template: 'block' } --><!-- /ko -->
+	        <!-- 2 Even Columns : END -->
+
+	        <!-- 3 Even Columns : BEGIN -->
+	        <!-- ko block: { data: threeEvenColumnsBlock, template: 'block' } --><!-- /ko -->
+	        <!-- 3 Even Columns : END -->
+
+	        <!-- Thumbnail Left, Text Right : BEGIN -->
+	        <!-- ko block: { data: imageLeftBlock, template: 'block' } --><!-- /ko -->
+	        <!-- Thumbnail Left, Text Right : END -->
+
+	        <!-- Thumbnail Right, Text Left : BEGIN -->
+	        <!-- ko block: { data: imageRightBlock, template: 'block' } --><!-- /ko -->
+	        <!-- Thumbnail Right, Text Left : END -->
+
+	        <!-- Clear Spacer : BEGIN -->
+	        <!-- ko block: { data: spacerBlock, template: 'block' } --><!-- /ko -->
+	        <!-- Clear Spacer : END -->
+
+	        <!-- 1 Column Text : BEGIN -->
+	        <!-- ko block: { data: oneColumnTextBlock, template: 'block' } --><!-- /ko -->
+	        <!-- 1 Column Text : END -->
+
+	    </tbody><!-- /ko -->
+
+<!-- ################### msc-tmpl-anonymous-undefined-50342 #################### -->
+<table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" replacedstyle="margin: auto;" class="email-container" data-bind="block: mainBlocks, virtualAttrStyle: &apos;margin: auto;&apos;+&apos;&apos;" style="margin: auto;">
+
+	        <!-- Email Header : BEGIN -->
+            <tbody><!-- ko block: { data: headerBlock, template: 'block' } --><!-- /ko -->
+	        <!-- Email Header : END -->
+
+            <!-- Hero Image, Flush : BEGIN -->
+            <!-- ko block: { data: heroImageBlock, template: 'block' } --><!-- /ko -->
+            <!-- Hero Image, Flush : END -->
+
+            <!-- 1 Column Text + Button : BEGIN -->
+            <!-- ko block: { data: oneColumnTextButtonBlock, template: 'block' } --><!-- /ko -->
+            <!-- 1 Column Text + Button : END -->
+
+            <!-- Background Image with Text : BEGIN -->
+            <!-- ko block: { data: backgroundImageTextBlock, template: 'block' } --><!-- /ko -->
+	        <!-- Background Image with Text : END -->
+
+	        <!-- 2 Even Columns : BEGIN -->
+	        <!-- ko block: { data: twoEvenColumnsBlock, template: 'block' } --><!-- /ko -->
+	        <!-- 2 Even Columns : END -->
+
+	        <!-- 3 Even Columns : BEGIN -->
+	        <!-- ko block: { data: threeEvenColumnsBlock, template: 'block' } --><!-- /ko -->
+	        <!-- 3 Even Columns : END -->
+
+	        <!-- Thumbnail Left, Text Right : BEGIN -->
+	        <!-- ko block: { data: imageLeftBlock, template: 'block' } --><!-- /ko -->
+	        <!-- Thumbnail Left, Text Right : END -->
+
+	        <!-- Thumbnail Right, Text Left : BEGIN -->
+	        <!-- ko block: { data: imageRightBlock, template: 'block' } --><!-- /ko -->
+	        <!-- Thumbnail Right, Text Left : END -->
+
+	        <!-- Clear Spacer : BEGIN -->
+	        <!-- ko block: { data: spacerBlock, template: 'block' } --><!-- /ko -->
+	        <!-- Clear Spacer : END -->
+
+	        <!-- 1 Column Text : BEGIN -->
+	        <!-- ko block: { data: oneColumnTextBlock, template: 'block' } --><!-- /ko -->
+	        <!-- 1 Column Text : END -->
+
+	    </tbody></table>
+
+<!-- ################### msc-tmpl-template-show-52515 #################### -->
+<replacedhtml lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<replacedhead>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta replacedhttp-equiv="X-UA-Compatible" content="IE=edge" http-equiv="X-UA-Compatible"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no"> <!-- Tell iOS not to automatically link certain text strings. -->
+    <meta name="color-scheme" content="light">
+    <meta name="supported-color-schemes" content="light">
+    <title>TITLE</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <replacedcc condition="gte mso 9" style="display: none">
+    <!-- cc:bo:xml --><cc>
+        <!-- cc:bo:o:OfficeDocumentSettings --><cc>
+            <!-- cc:bo:o:PixelsPerInch --><cc>96<!-- cc:bc:o:PixelsPerInch --></cc><!-- cc:ac:o:PixelsPerInch -->
+        <!-- cc:bc:o:OfficeDocumentSettings --></cc><!-- cc:ac:o:OfficeDocumentSettings -->
+    <!-- cc:bc:xml --></cc><!-- cc:ac:xml -->
+    </replacedcc>
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 23 - 41 can be safely removed. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <replacedcc condition="mso" style="display: none">
+        <!-- cc:bo:style --><cc>
+            * {
+                font-family: sans-serif !important;
+            }
+        <!-- cc:bc:style --></cc><!-- cc:ac:style -->
+    </replacedcc>
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: https://web.archive.org/web/20190717120616/http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- Mosaico blockdefs : BEGIN -->
+    
+    <!-- Mosaico blockdefs : END -->
+
+    <!-- CSS Reset : BEGIN -->
+    <style data-bind="template: { name: &apos;msc-tmpl-anonymous-undefined-0&apos; }"></style>
+    <!-- CSS Reset : END -->
+
+    <!-- Progressive Enhancements : BEGIN -->
+    <style data-bind="template: { name: &apos;msc-tmpl-anonymous-undefined-5912&apos; }"></style>
+    <!-- Progressive Enhancements : END -->
+
+    
+</replacedhead>
+<!--
+	The email background color (#222222) is defined in three places:
+	1. body tag: for most email clients
+	2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
+	3. mso conditional: For Windows 10 Mail
+-->
+<replacedbody width="100%" replacedstyle="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;" class="email-bg" data-bind="virtualAttrStyle: &apos;margin: 0; &apos;+&apos;padding: 0 !important; &apos;+&apos;mso-line-height-rule: exactly; &apos;+&apos;background-color: #222222;&apos;+&apos;&apos;" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;">
+  <center role="article" aria-roledescription="email" lang="en" replacedstyle="width: 100%; background-color: #222222;" class="email-bg" data-bind="virtualAttrStyle: &apos;width: 100%; &apos;+&apos;background-color: #222222;&apos;+&apos;&apos;" style="width: 100%; background-color: #222222;">
+    <replacedcc condition="mso | IE" style="display: none">
+    <!-- cc:bo:table --><cc role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" replacedstyle="background-color: #222222;" class="email-bg" data-bind="virtualAttrStyle: &apos;background-color: #222222;&apos;+&apos;&apos;" style="background-color: #222222;">
+    <!-- cc:bo:tr --><cc>
+    <!-- cc:bo:td --><cc>
+    <!-- cc:end --></cc></cc></cc></replacedcc>
+
+        <!-- Visually Hidden Preheader Text : BEGIN -->
+        <div replacedstyle="max-height:0; overflow:hidden; mso-hide:all;" aria-hidden="true" data-bind="virtualAttrStyle: &apos;max-height: 0; &apos;+&apos;overflow: hidden; &apos;+&apos;mso-hide: all;&apos;+&apos;&apos;" style="max-height:0; overflow:hidden; mso-hide:all;">
+            (Optional) This text will appear in the inbox preview, but not the email body. It can be used to supplement the email subject line or even summarize the email&apos;s contents. Extended text preheaders (~490 characters) seems like a better UX for anyone using a screenreader or voice-command apps like Siri to dictate the contents of an email. If this text is not included, email clients will automatically populate it using the text (including image alt text) at the start of the email&apos;s body.
+        </div>
+        <!-- Visually Hidden Preheader Text : END -->
+
+        <!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
+        <!-- Preview Text Spacing Hack : BEGIN -->
+        <div replacedstyle="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;" data-bind="virtualAttrStyle: &apos;display: none; &apos;+&apos;font-size: 1px; &apos;+&apos;line-height: 1px; &apos;+&apos;max-height: 0px; &apos;+&apos;max-width: 0px; &apos;+&apos;opacity: 0; &apos;+&apos;overflow: hidden; &apos;+&apos;mso-hide: all; &apos;+&apos;font-family: sans-serif;&apos;+&apos;&apos;" style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+            &#x200C;&#xA0;&#x200C;&#xA0;&#x200C;&#xA0;&#x200C;&#xA0;&#x200C;&#xA0;&#x200C;&#xA0;&#x200C;&#xA0;&#x200C;&#xA0;&#x200C;&#xA0;&#x200C;&#xA0;&#x200C;&#xA0;&#x200C;&#xA0;&#x200C;&#xA0;&#x200C;&#xA0;&#x200C;&#xA0;&#x200C;&#xA0;&#x200C;&#xA0;&#x200C;&#xA0;
+        </div>
+        <!-- Preview Text Spacing Hack : END -->
+
+        <!-- Email Body : BEGIN -->
+        
+	    <!-- Email Body : END -->
+
+	    <!-- Email Footer : BEGIN -->
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" replacedstyle="margin: auto;" class="footer" data-bind="virtualAttrStyle: &apos;margin: auto;&apos;+&apos;&apos;" style="margin: auto;">
+	        <tbody><tr>
+	            <td replacedstyle="padding: 20px; font-family: sans-serif; font-size: 12px; line-height: 15px; text-align: center; color: #ffffff;" data-bind="virtualAttrStyle: &apos;padding: 20px; &apos;+&apos;font-family: sans-serif; &apos;+&apos;font-size: 12px; &apos;+&apos;line-height: 15px; &apos;+&apos;text-align: center; &apos;+&apos;color: #ffffff;&apos;+&apos;&apos;" style="padding: 20px; font-family: sans-serif; font-size: 12px; line-height: 15px; text-align: center; color: #ffffff;">
+	                <webversion replacedstyle="color: #ffffff; text-decoration: underline; font-weight: bold;" data-bind="virtualAttrStyle: &apos;color: #ffffff; &apos;+&apos;text-decoration: underline; &apos;+&apos;font-weight: bold;&apos;+&apos;&apos;" style="color: #ffffff; text-decoration: underline; font-weight: bold;">View as a Web Page</webversion>
+	                <br><br>
+	                Company Name<br><span class="unstyle-auto-detected-links">123 Fake Street, SpringField, OR, 97477 US<br>(123) 456-7890</span>
+	                <br><br>
+	                <unsubscribe replacedstyle="color: #ffffff; text-decoration: underline;" data-bind="virtualAttrStyle: &apos;color: #ffffff; &apos;+&apos;text-decoration: underline;&apos;+&apos;&apos;" style="color: #ffffff; text-decoration: underline;">unsubscribe</unsubscribe>
+	            </td>
+	        </tr>
+	    </tbody></table>
+	    <!-- Email Footer : END -->
+
+	    <!-- Full Bleed Background Section : BEGIN -->
+	    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" replacedstyle="background-color: #709f2b;" class="darkmode-fullbleed-bg" data-bind="virtualAttrStyle: &apos;background-color: #709f2b;&apos;+&apos;&apos;" style="background-color: #709f2b;">
+	        <tbody><tr>
+	            <td>
+	                <div align="center" replacedstyle="max-width: 600px; margin: auto;" class="email-container" data-bind="virtualAttrStyle: &apos;max-width: 600px; &apos;+&apos;margin: auto;&apos;+&apos;&apos;" style="max-width: 600px; margin: auto;">
+	                    <replacedcc condition="mso" style="display: none">
+	                    <!-- cc:bo:table --><cc role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+	                    <!-- cc:bo:tr --><cc>
+	                    <!-- cc:bo:td --><cc>
+	                    <!-- cc:end --></cc></cc></cc></replacedcc>
+	                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+	                        <tbody><tr>
+	                            <td replacedstyle="padding: 20px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #ffffff;" data-bind="virtualAttrStyle: &apos;padding: 20px; &apos;+&apos;text-align: left; &apos;+&apos;font-family: sans-serif; &apos;+&apos;font-size: 15px; &apos;+&apos;line-height: 20px; &apos;+&apos;color: #ffffff;&apos;+&apos;&apos;" style="padding: 20px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #ffffff;">
+	                                <p replacedstyle="margin: 0;" data-bind="virtualAttrStyle: &apos;margin: 0;&apos;+&apos;&apos;" style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&#xA0;erat.</p>
+	                            </td>
+	                        </tr>
+	                    </tbody></table>
+	                    <replacedcc condition="mso" style="display: none">
+	                    <!-- cc:bc:td --><!-- cc:ac:td -->
+	                    <!-- cc:bc:tr --><!-- cc:ac:tr -->
+	                    <!-- cc:bc:table --><!-- cc:ac:table -->
+	                    </replacedcc>
+	                </div>
+	            </td>
+	        </tr>
+	    </tbody></table>
+	    <!-- Full Bleed Background Section : END -->
+
+    <replacedcc condition="mso | IE" style="display: none">
+    <!-- cc:bc:td --><!-- cc:ac:td -->
+    <!-- cc:bc:tr --><!-- cc:ac:tr -->
+    <!-- cc:bc:table --><!-- cc:ac:table -->
+    </replacedcc>
+    </center>
+</replacedbody>
+</replacedhtml>

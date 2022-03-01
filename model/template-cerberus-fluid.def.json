@@ -1,0 +1,713 @@
+{
+  "_defs": {
+    "id": {
+      "_writeable": false,
+      "_category": "content",
+      "type": "id",
+      "_initialized": true
+    },
+    "bodyTheme": {
+      "_writeable": false,
+      "_category": "style",
+      "type": "bodyTheme",
+      "_initialized": true
+    },
+    "blocks": {
+      "_writeable": false,
+      "_category": "content",
+      "type": "blocks",
+      "_initialized": true,
+      "_processedDefs": {
+        "blocks": "blocks[]"
+      },
+      "_globalStyles": {},
+      "_defaultValues": {
+        "blocks": []
+      },
+      "blocks": [],
+      "_complex": true
+    },
+    "text": {
+      "_writeable": true,
+      "_category": "content"
+    },
+    "template": {
+      "_writeable": false,
+      "_context": "template",
+      "_category": "content",
+      "type": "template",
+      "_initialized": true,
+      "_processedDefs": {
+        "headerBlock": "headerBlock",
+        "heroImageBlock": "heroImageBlock",
+        "oneColumnTextButtonBlock": "oneColumnTextButtonBlock",
+        "backgroundImageTextBlock": "backgroundImageTextBlock",
+        "twoEvenColumnsBlock": "twoEvenColumnsBlock",
+        "threeEvenColumnsBlock": "threeEvenColumnsBlock",
+        "imageLeftBlock": "imageLeftBlock",
+        "imageRightBlock": "imageRightBlock",
+        "spacerBlock": "spacerBlock",
+        "oneColumnTextBlock": "oneColumnTextBlock",
+        "mainBlocks": "mainBlocks"
+      },
+      "_globalStyles": {},
+      "_defaultValues": {
+        "mainBlocks.blocks": "[]"
+      },
+      "headerBlock": {
+        "_writeable": false,
+        "_name": "Email Header Block",
+        "_category": "content",
+        "_context": "block",
+        "_globalStyle": "_theme_.bodyTheme",
+        "type": "headerBlock",
+        "_initialized": true,
+        "_processedDefs": {
+          "customStyle": "customStyle=false",
+          "id": "id"
+        },
+        "_globalStyles": {},
+        "_defaultValues": {
+          "customStyle": false,
+          "id": ""
+        },
+        "customStyle": null,
+        "_complex": true,
+        "id": {
+          "_writeable": false,
+          "_category": "content",
+          "type": "id",
+          "_initialized": true,
+          "_usecount": 1
+        },
+        "_usecount": 2
+      },
+      "_complex": true,
+      "_usecount": 11,
+      "heroImageBlock": {
+        "_writeable": false,
+        "_name": "Hero Image Block",
+        "_category": "content",
+        "_context": "block",
+        "_globalStyle": "_theme_.bodyTheme",
+        "type": "heroImageBlock",
+        "_initialized": true,
+        "_processedDefs": {
+          "customStyle": "customStyle=false",
+          "id": "id"
+        },
+        "_globalStyles": {},
+        "_defaultValues": {
+          "customStyle": false,
+          "id": ""
+        },
+        "customStyle": null,
+        "_complex": true,
+        "id": {
+          "_writeable": false,
+          "_category": "content",
+          "type": "id",
+          "_initialized": true,
+          "_usecount": 1
+        },
+        "_usecount": 2
+      },
+      "oneColumnTextButtonBlock": {
+        "_writeable": false,
+        "_name": "1 Column Text + Button Block",
+        "_category": "content",
+        "_context": "block",
+        "_globalStyle": "_theme_.bodyTheme",
+        "type": "oneColumnTextButtonBlock",
+        "_initialized": true,
+        "_processedDefs": {
+          "customStyle": "customStyle=false",
+          "id": "id"
+        },
+        "_globalStyles": {},
+        "_defaultValues": {
+          "customStyle": false,
+          "id": ""
+        },
+        "customStyle": null,
+        "_complex": true,
+        "id": {
+          "_writeable": false,
+          "_category": "content",
+          "type": "id",
+          "_initialized": true,
+          "_usecount": 1
+        },
+        "_usecount": 2
+      },
+      "backgroundImageTextBlock": {
+        "_writeable": false,
+        "_name": "Background Image with Text Block",
+        "_category": "content",
+        "_context": "block",
+        "_globalStyle": "_theme_.bodyTheme",
+        "type": "backgroundImageTextBlock",
+        "_initialized": true,
+        "_processedDefs": {
+          "customStyle": "customStyle=false",
+          "id": "id"
+        },
+        "_globalStyles": {},
+        "_defaultValues": {
+          "customStyle": false,
+          "id": ""
+        },
+        "customStyle": null,
+        "_complex": true,
+        "id": {
+          "_writeable": false,
+          "_category": "content",
+          "type": "id",
+          "_initialized": true,
+          "_usecount": 1
+        },
+        "_usecount": 2
+      },
+      "twoEvenColumnsBlock": {
+        "_writeable": false,
+        "_name": "2 Even Columns Block",
+        "_category": "content",
+        "_context": "block",
+        "_globalStyle": "_theme_.bodyTheme",
+        "type": "twoEvenColumnsBlock",
+        "_initialized": true,
+        "_processedDefs": {
+          "customStyle": "customStyle=false",
+          "id": "id"
+        },
+        "_globalStyles": {},
+        "_defaultValues": {
+          "customStyle": false,
+          "id": ""
+        },
+        "customStyle": null,
+        "_complex": true,
+        "id": {
+          "_writeable": false,
+          "_category": "content",
+          "type": "id",
+          "_initialized": true,
+          "_usecount": 1
+        },
+        "_usecount": 2
+      },
+      "threeEvenColumnsBlock": {
+        "_writeable": false,
+        "_name": "3 Even Columns Block",
+        "_category": "content",
+        "_context": "block",
+        "_globalStyle": "_theme_.bodyTheme",
+        "type": "threeEvenColumnsBlock",
+        "_initialized": true,
+        "_processedDefs": {
+          "customStyle": "customStyle=false",
+          "id": "id"
+        },
+        "_globalStyles": {},
+        "_defaultValues": {
+          "customStyle": false,
+          "id": ""
+        },
+        "customStyle": null,
+        "_complex": true,
+        "id": {
+          "_writeable": false,
+          "_category": "content",
+          "type": "id",
+          "_initialized": true,
+          "_usecount": 1
+        },
+        "_usecount": 2
+      },
+      "imageLeftBlock": {
+        "_writeable": false,
+        "_name": "Image Left Block",
+        "_category": "content",
+        "_context": "block",
+        "_globalStyle": "_theme_.bodyTheme",
+        "type": "imageLeftBlock",
+        "_initialized": true,
+        "_processedDefs": {
+          "customStyle": "customStyle=false",
+          "id": "id"
+        },
+        "_globalStyles": {},
+        "_defaultValues": {
+          "customStyle": false,
+          "id": ""
+        },
+        "customStyle": null,
+        "_complex": true,
+        "id": {
+          "_writeable": false,
+          "_category": "content",
+          "type": "id",
+          "_initialized": true,
+          "_usecount": 1
+        },
+        "_usecount": 2
+      },
+      "imageRightBlock": {
+        "_writeable": false,
+        "_name": "Image Right Block",
+        "_category": "content",
+        "_context": "block",
+        "_globalStyle": "_theme_.bodyTheme",
+        "type": "imageRightBlock",
+        "_initialized": true,
+        "_processedDefs": {
+          "customStyle": "customStyle=false",
+          "id": "id"
+        },
+        "_globalStyles": {},
+        "_defaultValues": {
+          "customStyle": false,
+          "id": ""
+        },
+        "customStyle": null,
+        "_complex": true,
+        "id": {
+          "_writeable": false,
+          "_category": "content",
+          "type": "id",
+          "_initialized": true,
+          "_usecount": 1
+        },
+        "_usecount": 2
+      },
+      "spacerBlock": {
+        "_writeable": false,
+        "_name": "Clear Spacer Block",
+        "_category": "content",
+        "_context": "block",
+        "_globalStyle": "_theme_.bodyTheme",
+        "type": "spacerBlock",
+        "_initialized": true,
+        "_processedDefs": {
+          "customStyle": "customStyle=false",
+          "id": "id"
+        },
+        "_globalStyles": {},
+        "_defaultValues": {
+          "customStyle": false,
+          "id": ""
+        },
+        "customStyle": null,
+        "_complex": true,
+        "id": {
+          "_writeable": false,
+          "_category": "content",
+          "type": "id",
+          "_initialized": true,
+          "_usecount": 1
+        },
+        "_usecount": 2
+      },
+      "oneColumnTextBlock": {
+        "_writeable": false,
+        "_name": "1 Column Text Block",
+        "_category": "content",
+        "_context": "block",
+        "_globalStyle": "_theme_.bodyTheme",
+        "type": "oneColumnTextBlock",
+        "_initialized": true,
+        "_processedDefs": {
+          "customStyle": "customStyle=false",
+          "id": "id"
+        },
+        "_globalStyles": {},
+        "_defaultValues": {
+          "customStyle": false,
+          "id": ""
+        },
+        "customStyle": null,
+        "_complex": true,
+        "id": {
+          "_writeable": false,
+          "_category": "content",
+          "type": "id",
+          "_initialized": true,
+          "_usecount": 1
+        },
+        "_usecount": 2
+      },
+      "mainBlocks": {
+        "_writeable": false,
+        "_category": "content",
+        "type": "blocks",
+        "_initialized": true,
+        "_processedDefs": {
+          "blocks": "blocks[]"
+        },
+        "_globalStyles": {},
+        "_defaultValues": {
+          "blocks": []
+        },
+        "blocks": [],
+        "_complex": true,
+        "_usecount": 1
+      }
+    },
+    "headerBlock": {
+      "_writeable": false,
+      "_name": "Email Header Block",
+      "_category": "content",
+      "_context": "block",
+      "_globalStyle": "_theme_.bodyTheme",
+      "type": "headerBlock",
+      "_initialized": true,
+      "_processedDefs": {
+        "customStyle": "customStyle=false",
+        "id": "id"
+      },
+      "_globalStyles": {},
+      "_defaultValues": {
+        "customStyle": false,
+        "id": ""
+      },
+      "customStyle": null,
+      "_complex": true,
+      "id": {
+        "_writeable": false,
+        "_category": "content",
+        "type": "id",
+        "_initialized": true,
+        "_usecount": 1
+      },
+      "_usecount": 1
+    },
+    "heroImageBlock": {
+      "_writeable": false,
+      "_name": "Hero Image Block",
+      "_category": "content",
+      "_context": "block",
+      "_globalStyle": "_theme_.bodyTheme",
+      "type": "heroImageBlock",
+      "_initialized": true,
+      "_processedDefs": {
+        "customStyle": "customStyle=false",
+        "id": "id"
+      },
+      "_globalStyles": {},
+      "_defaultValues": {
+        "customStyle": false,
+        "id": ""
+      },
+      "customStyle": null,
+      "_complex": true,
+      "id": {
+        "_writeable": false,
+        "_category": "content",
+        "type": "id",
+        "_initialized": true,
+        "_usecount": 1
+      },
+      "_usecount": 1
+    },
+    "oneColumnTextButtonBlock": {
+      "_writeable": false,
+      "_name": "1 Column Text + Button Block",
+      "_category": "content",
+      "_context": "block",
+      "_globalStyle": "_theme_.bodyTheme",
+      "type": "oneColumnTextButtonBlock",
+      "_initialized": true,
+      "_processedDefs": {
+        "customStyle": "customStyle=false",
+        "id": "id"
+      },
+      "_globalStyles": {},
+      "_defaultValues": {
+        "customStyle": false,
+        "id": ""
+      },
+      "customStyle": null,
+      "_complex": true,
+      "id": {
+        "_writeable": false,
+        "_category": "content",
+        "type": "id",
+        "_initialized": true,
+        "_usecount": 1
+      },
+      "_usecount": 1
+    },
+    "backgroundImageTextBlock": {
+      "_writeable": false,
+      "_name": "Background Image with Text Block",
+      "_category": "content",
+      "_context": "block",
+      "_globalStyle": "_theme_.bodyTheme",
+      "type": "backgroundImageTextBlock",
+      "_initialized": true,
+      "_processedDefs": {
+        "customStyle": "customStyle=false",
+        "id": "id"
+      },
+      "_globalStyles": {},
+      "_defaultValues": {
+        "customStyle": false,
+        "id": ""
+      },
+      "customStyle": null,
+      "_complex": true,
+      "id": {
+        "_writeable": false,
+        "_category": "content",
+        "type": "id",
+        "_initialized": true,
+        "_usecount": 1
+      },
+      "_usecount": 1
+    },
+    "twoEvenColumnsBlock": {
+      "_writeable": false,
+      "_name": "2 Even Columns Block",
+      "_category": "content",
+      "_context": "block",
+      "_globalStyle": "_theme_.bodyTheme",
+      "type": "twoEvenColumnsBlock",
+      "_initialized": true,
+      "_processedDefs": {
+        "customStyle": "customStyle=false",
+        "id": "id"
+      },
+      "_globalStyles": {},
+      "_defaultValues": {
+        "customStyle": false,
+        "id": ""
+      },
+      "customStyle": null,
+      "_complex": true,
+      "id": {
+        "_writeable": false,
+        "_category": "content",
+        "type": "id",
+        "_initialized": true,
+        "_usecount": 1
+      },
+      "_usecount": 1
+    },
+    "threeEvenColumnsBlock": {
+      "_writeable": false,
+      "_name": "3 Even Columns Block",
+      "_category": "content",
+      "_context": "block",
+      "_globalStyle": "_theme_.bodyTheme",
+      "type": "threeEvenColumnsBlock",
+      "_initialized": true,
+      "_processedDefs": {
+        "customStyle": "customStyle=false",
+        "id": "id"
+      },
+      "_globalStyles": {},
+      "_defaultValues": {
+        "customStyle": false,
+        "id": ""
+      },
+      "customStyle": null,
+      "_complex": true,
+      "id": {
+        "_writeable": false,
+        "_category": "content",
+        "type": "id",
+        "_initialized": true,
+        "_usecount": 1
+      },
+      "_usecount": 1
+    },
+    "imageLeftBlock": {
+      "_writeable": false,
+      "_name": "Image Left Block",
+      "_category": "content",
+      "_context": "block",
+      "_globalStyle": "_theme_.bodyTheme",
+      "type": "imageLeftBlock",
+      "_initialized": true,
+      "_processedDefs": {
+        "customStyle": "customStyle=false",
+        "id": "id"
+      },
+      "_globalStyles": {},
+      "_defaultValues": {
+        "customStyle": false,
+        "id": ""
+      },
+      "customStyle": null,
+      "_complex": true,
+      "id": {
+        "_writeable": false,
+        "_category": "content",
+        "type": "id",
+        "_initialized": true,
+        "_usecount": 1
+      },
+      "_usecount": 1
+    },
+    "imageRightBlock": {
+      "_writeable": false,
+      "_name": "Image Right Block",
+      "_category": "content",
+      "_context": "block",
+      "_globalStyle": "_theme_.bodyTheme",
+      "type": "imageRightBlock",
+      "_initialized": true,
+      "_processedDefs": {
+        "customStyle": "customStyle=false",
+        "id": "id"
+      },
+      "_globalStyles": {},
+      "_defaultValues": {
+        "customStyle": false,
+        "id": ""
+      },
+      "customStyle": null,
+      "_complex": true,
+      "id": {
+        "_writeable": false,
+        "_category": "content",
+        "type": "id",
+        "_initialized": true,
+        "_usecount": 1
+      },
+      "_usecount": 1
+    },
+    "spacerBlock": {
+      "_writeable": false,
+      "_name": "Clear Spacer Block",
+      "_category": "content",
+      "_context": "block",
+      "_globalStyle": "_theme_.bodyTheme",
+      "type": "spacerBlock",
+      "_initialized": true,
+      "_processedDefs": {
+        "customStyle": "customStyle=false",
+        "id": "id"
+      },
+      "_globalStyles": {},
+      "_defaultValues": {
+        "customStyle": false,
+        "id": ""
+      },
+      "customStyle": null,
+      "_complex": true,
+      "id": {
+        "_writeable": false,
+        "_category": "content",
+        "type": "id",
+        "_initialized": true,
+        "_usecount": 1
+      },
+      "_usecount": 1
+    },
+    "oneColumnTextBlock": {
+      "_writeable": false,
+      "_name": "1 Column Text Block",
+      "_category": "content",
+      "_context": "block",
+      "_globalStyle": "_theme_.bodyTheme",
+      "type": "oneColumnTextBlock",
+      "_initialized": true,
+      "_processedDefs": {
+        "customStyle": "customStyle=false",
+        "id": "id"
+      },
+      "_globalStyles": {},
+      "_defaultValues": {
+        "customStyle": false,
+        "id": ""
+      },
+      "customStyle": null,
+      "_complex": true,
+      "id": {
+        "_writeable": false,
+        "_category": "content",
+        "type": "id",
+        "_initialized": true,
+        "_usecount": 1
+      },
+      "_usecount": 1
+    },
+    "theme": {
+      "_writeable": false,
+      "_category": "style",
+      "type": "theme",
+      "_initialized": true,
+      "_processedDefs": {
+        "bodyTheme": "bodyTheme"
+      },
+      "_globalStyles": {},
+      "_defaultValues": {},
+      "bodyTheme": {
+        "_writeable": false,
+        "_category": "style",
+        "type": "bodyTheme",
+        "_initialized": true
+      },
+      "_complex": true
+    }
+  },
+  "templateName": "template",
+  "_blocks": [
+    {
+      "root": "template",
+      "block": "headerBlock",
+      "context": "block"
+    },
+    {
+      "root": "template",
+      "block": "heroImageBlock",
+      "context": "block"
+    },
+    {
+      "root": "template",
+      "block": "oneColumnTextButtonBlock",
+      "context": "block"
+    },
+    {
+      "root": "template",
+      "block": "backgroundImageTextBlock",
+      "context": "block"
+    },
+    {
+      "root": "template",
+      "block": "twoEvenColumnsBlock",
+      "context": "block"
+    },
+    {
+      "root": "template",
+      "block": "threeEvenColumnsBlock",
+      "context": "block"
+    },
+    {
+      "root": "template",
+      "block": "imageLeftBlock",
+      "context": "block"
+    },
+    {
+      "root": "template",
+      "block": "imageRightBlock",
+      "context": "block"
+    },
+    {
+      "root": "template",
+      "block": "spacerBlock",
+      "context": "block"
+    },
+    {
+      "root": "template",
+      "block": "oneColumnTextBlock",
+      "context": "block"
+    },
+    {
+      "root": "template",
+      "block": "template",
+      "context": "template"
+    }
+  ]
+}

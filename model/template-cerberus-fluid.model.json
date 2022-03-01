@@ -1,0 +1,61 @@
+{
+  "type": "template",
+  "headerBlock": {
+    "type": "headerBlock",
+    "customStyle": false,
+    "id": ""
+  },
+  "heroImageBlock": {
+    "type": "heroImageBlock",
+    "customStyle": false,
+    "id": ""
+  },
+  "oneColumnTextButtonBlock": {
+    "type": "oneColumnTextButtonBlock",
+    "customStyle": false,
+    "id": ""
+  },
+  "backgroundImageTextBlock": {
+    "type": "backgroundImageTextBlock",
+    "customStyle": false,
+    "id": ""
+  },
+  "twoEvenColumnsBlock": {
+    "type": "twoEvenColumnsBlock",
+    "customStyle": false,
+    "id": ""
+  },
+  "threeEvenColumnsBlock": {
+    "type": "threeEvenColumnsBlock",
+    "customStyle": false,
+    "id": ""
+  },
+  "imageLeftBlock": {
+    "type": "imageLeftBlock",
+    "customStyle": false,
+    "id": ""
+  },
+  "imageRightBlock": {
+    "type": "imageRightBlock",
+    "customStyle": false,
+    "id": ""
+  },
+  "spacerBlock": {
+    "type": "spacerBlock",
+    "customStyle": false,
+    "id": ""
+  },
+  "oneColumnTextBlock": {
+    "type": "oneColumnTextBlock",
+    "customStyle": false,
+    "id": ""
+  },
+  "mainBlocks": {
+    "type": "blocks",
+    "blocks": []
+  },
+  "theme": {
+    "type": "theme",
+    "bodyTheme": null
+  }
+}
