@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
   <title style="-ko-bind-text: @titleText">TITLE</title>
   <style type="text/css">
     @supports -ko-blockdefs {
