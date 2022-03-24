@@ -2,7 +2,7 @@
   "type": "template",
   "customStyle": false,
   "preheaderVisible": true,
-  "titleText": "TITLE",
+  "titleText": "[MB3M:TITRECAMPAGNE]",
   "preheaderBlock": {
     "type": "preheaderBlock",
     "customStyle": false,
@@ -16,7 +16,7 @@
       "size": null,
       "decoration": null
     },
-    "preheaderLinkOption": "[unsubscribe_link]",
+    "preheaderLinkOption": "[MB3M:DESABONNEURL]",
     "longTextStyle": {
       "type": "longTextStyle",
       "face": null,
@@ -26,15 +26,15 @@
       "align": null,
       "linksColor": null
     },
-    "unsubscribeText": "Unsubscribe",
-    "webversionText": "View in your browser"
+    "unsubscribeText": "D&#xE9;sinscription",
+    "webversionText": "Afficher dans votre navigateur"
   },
   "sponsor": {
     "type": "sponsor",
-    "visible": true,
+    "visible": false,
     "src": "img/sponsor.gif",
     "url": "",
-    "alt": "sponsor"
+    "alt": null
   },
   "footerBlock": {
     "type": "footerBlock",
@@ -57,8 +57,8 @@
       "size": null,
       "decoration": null
     },
-    "longText": "<p>Email sent to <a href=\"mailto:[mail]\">[mail]</a></p>",
-    "disiscrivitiText": "Unsubscribe"
+    "longText": "<p>Email envoy&#xE9; &#xE0; <a href=\"mailto:[MB3M:TARGETEMAIL]\">[MB3M:TARGETEMAIL]</a>[MB3M:LU]</p>",
+    "disiscrivitiText": "D&#xE9;sinscription"
   },
   "mainBlocks": {
     "type": "blocks",

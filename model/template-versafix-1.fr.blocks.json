@@ -7,7 +7,7 @@
       "type": "image",
       "src": "",
       "url": "",
-      "alt": ""
+      "alt": null
     },
     "imageWidth": "258",
     "id": "",
@@ -67,17 +67,17 @@
       "type": "image",
       "src": "",
       "url": "",
-      "alt": ""
+      "alt": null
     },
-    "longText": "<p>Far far away, behind the word mountains, far from the countries <a href=\"\">Vokalia and Consonantia</a>, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>",
+    "longText": "<p>Le trois septembre, &#xE0; dix heures du soir, un gendarme r&#xE9;veilla tout Verri&#xE8;res en montant la grande rue au galop ; il apportait la nouvelle que Sa Majest&#xE9; le roi de arrivait le dimanche suivant, et l&#x2019;on &#xE9;tait au mardi. Le pr&#xE9;fet autorisait, c&#x2019;est-&#xE0;-dire demandait la formation d&#x2019;une garde d&#x2019;honneur ; il fallait d&#xE9;ployer toute la pompe possible.</p>",
     "buttonLink": {
       "type": "link",
-      "text": "BUTTON",
+      "text": "BOUTON",
       "url": ""
     },
     "id": "",
     "externalBackgroundColor": null,
-    "titleText": "Title"
+    "titleText": "Titre"
   },
   {
     "type": "singleArticleBlock",
@@ -115,9 +115,9 @@
       "type": "image",
       "src": "",
       "url": "",
-      "alt": ""
+      "alt": null
     },
-    "longText": "<p>Far far away, behind the word mountains, far from the countries <a href=\"\">Vokalia and Consonantia</a>, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>",
+    "longText": "<p>Le trois septembre, &#xE0; dix heures du soir, un gendarme r&#xE9;veilla tout Verri&#xE8;res en montant la grande rue au galop ; il apportait la nouvelle que Sa Majest&#xE9; le roi de arrivait le dimanche suivant, et l&#x2019;on &#xE9;tait au mardi. Le pr&#xE9;fet autorisait, c&#x2019;est-&#xE0;-dire demandait la formation d&#x2019;une garde d&#x2019;honneur ; il fallait d&#xE9;ployer toute la pompe possible.</p>",
     "buttonLink": {
       "type": "link",
       "text": "BUTTON",
@@ -126,7 +126,7 @@
     "id": "",
     "externalBackgroundColor": null,
     "backgroundColor": null,
-    "text": "Section Title"
+    "text": "Titre section"
   },
   {
     "type": "titleBlock",
@@ -141,7 +141,7 @@
       "size": null,
       "align": null
     },
-    "text": "Section Title"
+    "text": "Titre section"
   },
   {
     "type": "textBlock",
@@ -156,7 +156,7 @@
       "align": null,
       "linksColor": null
     },
-    "longText": "<p>Far far away, behind the word mountains, far from the countries <a href=\"\">Vokalia and Consonantia</a>, there live the blind texts.</p>\r\n          <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>",
+    "longText": "<p>Le trois septembre, &#xE0; dix heures du soir, un gendarme r&#xE9;veilla tout Verri&#xE8;res en montant la grande rue au galop ; il apportait la nouvelle que Sa Majest&#xE9; le roi de arrivait le dimanche suivant, et l&#x2019;on &#xE9;tait au mardi.</p>\n          <p>Le pr&#xE9;fet autorisait, c&#x2019;est-&#xE0;-dire demandait la formation d&#x2019;une garde d&#x2019;honneur ; il fallait d&#xE9;ployer toute la pompe possible.</p>",
     "id": "",
     "externalBackgroundColor": null
   },
@@ -197,44 +197,44 @@
       "type": "image",
       "src": "",
       "url": "",
-      "alt": ""
+      "alt": null
     },
-    "leftLongText": "<p>Far far away, behind the word mountains, far from the countries <a href=\"\">Vokalia and Consonantia</a>, there live the blind texts.</p>",
+    "leftLongText": "<p>Le trois septembre, &#xE0; dix heures du soir, un gendarme r&#xE9;veilla tout Verri&#xE8;res en montant la grande rue au galop ; il apportait la nouvelle que Sa Majest&#xE9; le roi de arrivait le dimanche suivant, et l&#x2019;on &#xE9;tait au mardi.</p>",
     "leftButtonLink": {
       "type": "buttonLink",
-      "text": "BUTTON",
+      "text": "BOUTON",
       "url": ""
     },
     "middleImage": {
       "type": "image",
       "src": "",
       "url": "",
-      "alt": ""
+      "alt": null
     },
-    "middleLongText": "<p>Far far away, behind the word mountains, far from the countries <a href=\"\">Vokalia and Consonantia</a>, there live the blind texts.</p>",
+    "middleLongText": "<p>Le trois septembre, &#xE0; dix heures du soir, un gendarme r&#xE9;veilla tout Verri&#xE8;res en montant la grande rue au galop ; il apportait la nouvelle que Sa Majest&#xE9; le roi de arrivait le dimanche suivant, et l&#x2019;on &#xE9;tait au mardi.</p>",
     "middleButtonLink": {
       "type": "buttonLink",
-      "text": "BUTTON",
+      "text": "BOUTON",
       "url": ""
     },
     "rightImage": {
       "type": "image",
       "src": "",
       "url": "",
-      "alt": ""
+      "alt": null
     },
-    "rightLongText": "<p>Far far away, behind the word mountains, far from the countries <a href=\"\">Vokalia and Consonantia</a>, there live the blind texts.</p>",
+    "rightLongText": "<p>Le trois septembre, &#xE0; dix heures du soir, un gendarme r&#xE9;veilla tout Verri&#xE8;res en montant la grande rue au galop ; il apportait la nouvelle que Sa Majest&#xE9; le roi de arrivait le dimanche suivant, et l&#x2019;on &#xE9;tait au mardi.</p>",
     "rightButtonLink": {
       "type": "buttonLink",
-      "text": "BUTTON",
+      "text": "BOUTON",
       "url": ""
     },
     "id": "",
     "externalBackgroundColor": null,
     "imageHeight": "90",
-    "leftTitleText": "Title",
-    "middleTitleText": "Title",
-    "rightTitleText": "Title"
+    "leftTitleText": "Titre",
+    "middleTitleText": "Titre",
+    "rightTitleText": "Titre"
   },
   {
     "type": "doubleArticleBlock",
@@ -273,31 +273,31 @@
       "type": "image",
       "src": "",
       "url": "",
-      "alt": ""
+      "alt": null
     },
-    "leftLongText": "<p>Far far away, behind the word mountains, far from the countries <a href=\"\">Vokalia and Consonantia</a>, there live the blind texts.</p>",
+    "leftLongText": "<p>Le trois septembre, &#xE0; dix heures du soir, un gendarme r&#xE9;veilla tout Verri&#xE8;res en montant la grande rue au galop ; il apportait la nouvelle que Sa Majest&#xE9; le roi de arrivait le dimanche suivant, et l&#x2019;on &#xE9;tait au mardi.</p>",
     "leftButtonLink": {
       "type": "buttonLink",
-      "text": "BUTTON",
+      "text": "BOUTON",
       "url": ""
     },
     "rightImage": {
       "type": "image",
       "src": "",
       "url": "",
-      "alt": ""
+      "alt": null
     },
-    "rightLongText": "<p>Far far away, behind the word mountains, far from the countries <a href=\"\">Vokalia and Consonantia</a>, there live the blind texts.</p>",
+    "rightLongText": "<p>Le trois septembre, &#xE0; dix heures du soir, un gendarme r&#xE9;veilla tout Verri&#xE8;res en montant la grande rue au galop ; il apportait la nouvelle que Sa Majest&#xE9; le roi de arrivait le dimanche suivant, et l&#x2019;on &#xE9;tait au mardi.</p>",
     "rightButtonLink": {
       "type": "buttonLink",
-      "text": "BUTTON",
+      "text": "BOUTON",
       "url": ""
     },
     "id": "",
     "externalBackgroundColor": null,
     "imageHeight": "100",
-    "leftTitleText": "Title",
-    "rightTitleText": "Title"
+    "leftTitleText": "Titre",
+    "rightTitleText": "Titre"
   },
   {
     "type": "hrBlock",
@@ -329,7 +329,7 @@
     },
     "link": {
       "type": "link",
-      "text": "BUTTON",
+      "text": "BOUTON",
       "url": ""
     }
   },
@@ -353,7 +353,7 @@
       "type": "image",
       "src": "",
       "url": "",
-      "alt": ""
+      "alt": null
     }
   },
   {
@@ -377,14 +377,14 @@
       "type": "image",
       "src": "",
       "url": "",
-      "alt": ""
+      "alt": null
     },
     "imageHeight": "180",
     "rightImage": {
       "type": "image",
       "src": "",
       "url": "",
-      "alt": ""
+      "alt": null
     }
   },
   {
@@ -408,20 +408,20 @@
       "type": "image",
       "src": "",
       "url": "",
-      "alt": ""
+      "alt": null
     },
     "imageHeight": "160",
     "middleImage": {
       "type": "image",
       "src": "",
       "url": "",
-      "alt": ""
+      "alt": null
     },
     "rightImage": {
       "type": "image",
       "src": "",
       "url": "",
-      "alt": ""
+      "alt": null
     }
   },
   {
@@ -437,6 +437,10 @@
     "ggUrl": "",
     "webVisible": false,
     "webUrl": "",
+    "waVisible": false,
+    "waUrl": "",
+    "tgVisible": false,
+    "tgUrl": "",
     "inVisible": true,
     "inUrl": "",
     "piVisible": false,
@@ -486,11 +490,11 @@
       "buttonColor": null,
       "radius": null
     },
-    "fbText": "Share\r\n            ",
-    "twText": "Share\r\n            ",
-    "inText": "Share\r\n            ",
-    "ggText": "Share\r\n            ",
-    "piText": "Share\r\n            "
+    "fbText": "Partager\n            ",
+    "twText": "Partager\n            ",
+    "inText": "Partager\n            ",
+    "ggText": "Partager\n            ",
+    "piText": "Partager\n            "
   },
   {
     "type": "spacerBlock",
@@ -513,6 +517,10 @@
     "ggUrl": "",
     "webVisible": false,
     "webUrl": "",
+    "waVisible": false,
+    "waUrl": "",
+    "tgVisible": false,
+    "tgUrl": "",
     "inVisible": false,
     "inUrl": "",
     "piVisible": false,
@@ -534,7 +542,7 @@
       "align": null,
       "linksColor": null
     },
-    "longText": "<p>Address and <a href=\"\">Contacts</a></p>",
+    "longText": "<p>Adresse et <a href>Contacts</a></p>",
     "backgroundColor": null,
     "id": ""
   }
