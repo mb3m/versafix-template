@@ -23,7 +23,7 @@
       linksDecoration { label: Liens soulignés ?; extend: decoration }
       buttonColor { label: Couleur bouton; extend: color }
       text { label: Paragraphe; widget: text }
-      url { label: Lien; widget: url }
+      url { label: Lien; widget: url; help: 'Indiquez l\'adresse Internet complète (incluant les https://) vers laquelle rediriger l\'utilisateur sur un clic. Laissez vide pour ne pas proposer de lien.' }
       src { label: Image; widget: src }
       hrWidth { label: Largeur; widget: select; options:10|20|30|40|50|60|70|80|90|100; }
       hrHeight { label: Hauteur ligne; widget: integer; max: 80; }
@@ -40,7 +40,7 @@
         help: Le texte de remplacement sera affiché dans les logiciels de messagerie qui ne téléchargent pas automatiquement les images;
       }
       sponsor { label: Sponsor; properties: visible=false src url alt; category: hidden }
-      titleText {label: Titre Text;category: hidden;}
+      titleText { label: Titre; category: hidden; }
       gutterVisible { label: Afficher gouttière; extend: visible }
       socialIconType { label: Version icones; widget: select; options: bw=Noir et blanc|colors=Colorées; }
       bigSocialIconType { label: Version icones; widget: select; options:bw=Noir et blanc|colors=Colorées|rdcol=Colorées arrondies|rdbl=Colorées noir et blanc; }
@@ -53,7 +53,7 @@
         help: Si -Aucun- est sélectionné, le texte de pré-entête sera affiché;
       }
      
-      hrStyle { label: Style séparateur;properties:color hrWidth hrHeight; }
+      hrStyle { label: Style séparateur; properties:color hrWidth hrHeight; }
       hrStyle:preview { height: 200%; width: 200%; bottom: 20px; -ko-border-bottom: @[hrHeight]px solid @color; }
       preheaderVisible { label: Afficher pré-entête; extend: visible; help: 'Le bloc de pré-entête est le premier en haut de la page. Il contient un lien permettant d\'afficher le contenu en ligne et un éventuel lien de désinscription ou un texte de pré-entête qui sera utilisé comme aperçu par certains clients de messagerie.'; }
 
@@ -74,7 +74,7 @@
       bigButtonStyle { label: Gros bouton; extend: buttonStyle }
       titleTextStyle { label: Titre; extend: textStyle }
       /* background */
-      externalBackgroundColor { label: arrière-plan externe; extend: color }
+      externalBackgroundColor { label: Arrière-plan externe; extend: color }
 
       externalTextStyle { label: Texte remplacement; extend: textStyle }
       externalTextStyle:preview { -ko-bind-text: @['AaZz']; -ko-font-family: @face; -ko-color: @color; -ko-font-size: @[size]px; }
@@ -88,7 +88,7 @@
       buttonStyle:preview { -ko-bind-text: @['Button']; -ko-font-family: @face; -ko-color: @color; -ko-font-size: @[size]px; -ko-background-color: @buttonColor; padding-left: 5px; -ko-border-radius: @[radius]px; }
       
       /* contents */
-      preheaderText {label: Texte pré-entête; extend:text; help: 'Ce texte sera affiché sur certains clients de messagerie en tant qu\'aperçu du contenu de votre email.';}
+      preheaderText { label: Texte pré-entête; extend:text; help: 'Ce texte sera affiché sur certains clients de messagerie en tant qu\'aperçu du contenu de votre email.'; }
       leftImage { label: Image de gauche; extend: image }
       leftLongText { label: Texte de gauche; extend: text }
       leftButtonLink { label: Bouton de gauche; extend: buttonLink }
@@ -122,23 +122,23 @@
       piVisible { label: Pinterest; extend: visible }
       flVisible { label: Flickr; extend: visible }
       viVisible { label: Vimeo; extend: visible }
-      webVisible { label: Website; extend: visible }
+      webVisible { label: Site web; extend: visible }
       waVisible { label: Whatsapp; extend: visible }
       tgVisible { label: Telegram; extend: visible }
       instVisible { label: Instagram; extend: visible }
       youVisible { label: YouTube; extend: visible }
-      fbUrl { label: Facebook Link; extend: url }
-      twUrl { label: Twitter Link; extend: url}
-      ggUrl { label: Google+ Link; extend: url}
-      inUrl { label: LinkedIn Link; extend: url}
-      piUrl { label: Pinterest Link; extend: url}
-      flUrl { label: Flickr Link; extend: url}
-      viUrl { label: Vimeo Link; extend: url}
-      webUrl { label: Website Link; extend: url}
-      waUrl { label: Whatsapp Link; extend: url}
-      tgUrl { label: Telegram Link; extend: url}
-      instUrl { label: Instagram Link; extend: url}
-      youUrl { label: YouTube Link; extend: url}
+      fbUrl { label: Lien Facebook; extend: url; help: 'Adresse de votre page Facebook' }
+      twUrl { label: Lien Twitter; extend: url; help: 'Adresse de votre profil twitter' }
+      ggUrl { label: Lien Google+; extend: url; help: 'Adresse de votre profil Google+' }
+      inUrl { label: Lien LinkedIn; extend: url; help: 'Adresse de votre page LinkedIn' }
+      piUrl { label: Lien Pinterest; extend: url; help: 'Adresse de votre page Pinterest' }
+      flUrl { label: Lien Flickr; extend: url; help: 'Adresse de votre compte Flickr' }
+      viUrl { label: Lien Vimeo; extend: url; help: 'Adresse de votre page Vimeo'}
+      webUrl { label: Lien site web; extend: url; help: 'Adresse de votre site internet' }
+      waUrl { label: Lien Whatsapp; extend: url; help: 'Adresse pour vous envoyer un message via WhatsApp' }
+      tgUrl { label: Lien Telegram; extend: url; help: 'Adresse pour vous envoyer un message via Telegram' }
+      instUrl { label: Lien Instagram; extend: url; help: 'Adresse de votre profil Instagram' }
+      youUrl { label: Lien YouTube; extend: url; help: 'Adresse de votre page Youtube' }
 
       socialBlock {
         label: Bloc social;
@@ -168,7 +168,7 @@
       shareBlock ggVisible { label: Google+ }
       shareBlock piVisible { label: Pinterest }
       /* shareBlock shareUrlType { label: Share URL; widget: select; options:newsletter=Newsletter|custom=Custom;} */
-      shareBlock customUrl { label: Lien partage; }
+      shareBlock customUrl { label: Lien partage; help: 'Adresse personnalisée pour partager le contenu de votre newsletter' }
       shareBlock {
         label: Bloc partage;
         /* shareUrlType=newsletter */
@@ -179,7 +179,7 @@
       
       preheaderBlock { label:Bloc pré-entête;  theme: frameTheme}
 
-      sideArticleBlock imagePos {label:Position image;widget:select; options: left=Gauche|right=Droite; }
+      sideArticleBlock imagePos { label:Position image; widget:select; options: left=Gauche|right=Droite; }
       sideArticleBlock imageWidth { label: Taille image; widget: select; options: 120=Petite|166=Moyenne|258=Grande; }
       sideArticleBlock { label: Bloc image et texte; properties: backgroundColor titleVisible=true buttonVisible=true imageWidth=166 imagePos=left titleTextStyle longTextStyle buttonStyle  image  longText buttonLink; variant:imagePos; theme: contentTheme }
 
