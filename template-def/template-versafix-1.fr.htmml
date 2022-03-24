@@ -1084,7 +1084,7 @@
   <block name="footerBlock" label="Unsubscribe Block" theme="frameTheme">
     <block-inner inner-padding="0" inner-class="vb-row">
       <content spacing="9" width="552" td-styles="padding: 0 9px">
-        <long-text editable="longText" fixed-align="center"><p>Email envoyé à <a href="mailto:[MB3M:TARGETEMAIL]">[MB3M:TARGETEMAIL]</a></p></long-text>
+        <long-text editable="longText" fixed-align="center"><p>Email envoyé à <a href="mailto:[MB3M:TARGETEMAIL]">[MB3M:TARGETEMAIL]</a>[MB3M:LU]</p></long-text>
         <linked-text align="center" href="[MB3M:DESABONNEURL]" editable="disiscrivitiText"
           color-prop="Color.readability(linkStyle.color, backgroundColor) gt 2 ? linkStyle.color : (Color.isReadable('#ffffff', backgroundColor) ? '#ffffff' : '#000000')">Désinscription</linked-text>
         <linked-img width="170" align="center" false if="_root_.sponsor.visible" content="_root_.sponsor" src="img/sponsor.gif" alt="sponsor" />
