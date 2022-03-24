@@ -1018,7 +1018,7 @@
         <columns autowidth="1">
           <repeater prefix="fb,tw,in,gg,pi" default="if,if,false if,if,false if" name="Facebook,Twitter,LinkedIn,Google+,Pinterest" color="#3b5998,#4099FF,#007bb6,#d34836,#C92228" shareurl="http://www.facebook.com/sharer/sharer.php?u=,http://twitter.com/share?url=,http://www.linkedin.com/shareArticle?url=,http://plus.google.com/share?url=,http://pinterest.com/pin/find/?url=">
             <column-content {{default}}="{{prefix}}Visible" spacing="9" align="center">
-              <share-btn href="{{shareurl}}%5Bpermlink_urlenc%5D" color="#FFFFFF" bgcolor="{{color}}" icon-src="img/icons/{{prefix}}-white-96.png" btn-style="shareButtonStyle" editable="{{prefix}}Text">Partager</btn>
+              <share-btn href="{{shareurl}}[MB3M:ENLIGNEURL]" color="#FFFFFF" bgcolor="{{color}}" icon-src="img/icons/{{prefix}}-white-96.png" btn-style="shareButtonStyle" editable="{{prefix}}Text">Partager</btn>
             </column-content>
           </repeater>
         </columns>
@@ -1027,7 +1027,7 @@
         <columns autowidth="1">
           <repeater prefix="fb,tw,in,gg,pi" default="if,if,false if,if,false if" name="Facebook,Twitter,LinkedIn,Google+,Pinterest" color="#3b5998,#4099FF,#007bb6,#d34836,#C92228" shareurl="http://www.facebook.com/sharer/sharer.php?u=,http://twitter.com/share?url=,http://www.linkedin.com/shareArticle?url=,http://plus.google.com/share?url=,http://pinterest.com/pin/find/?url=">
             <column-content {{default}}="{{prefix}}Visible" spacing="9" align="center">
-              <share-btn href="{{shareurl}}%5Bpermlink_urlenc%5D" color="#000000" bgcolor="#FFFFFF" icon-src="img/icons/{{prefix}}-coloured-96.png" font-style="shareButtonStyle" editable="{{prefix}}Text">Partager</btn>
+              <share-btn href="{{shareurl}}[MB3M:ENLIGNEURL]" color="#000000" bgcolor="#FFFFFF" icon-src="img/icons/{{prefix}}-coloured-96.png" font-style="shareButtonStyle" editable="{{prefix}}Text">Partager</btn>
             </column-content>
           </repeater>
         </columns>
@@ -1036,13 +1036,13 @@
         <columns autowidth="1">
           <repeater prefix="fb,tw,in,gg,pi" default="if,if,false if,if,false if" name="Facebook,Twitter,LinkedIn,Google+,Pinterest" color="#3b5998,#4099FF,#007bb6,#d34836,#C92228" shareurl="http://www.facebook.com/sharer/sharer.php?u=,http://twitter.com/share?url=,http://www.linkedin.com/shareArticle?url=,http://plus.google.com/share?url=,http://pinterest.com/pin/find/?url=">
             <column-content {{default}}="{{prefix}}Visible and shareButtonStyle.iconColorType eq 'brand'" spacing="9" align="center">
-              <share-btn href="{{shareurl}}%5Bpermlink_urlenc%5D" icon-src="img/icons/{{prefix}}-coloured-96.png" editable="{{prefix}}Text" custom-style="shareButtonStyle">Partager</btn>
+              <share-btn href="{{shareurl}}[MB3M:ENLIGNEURL]" icon-src="img/icons/{{prefix}}-coloured-96.png" editable="{{prefix}}Text" custom-style="shareButtonStyle">Partager</btn>
             </column-content>
             <column-content {{default}}="{{prefix}}Visible and shareButtonStyle.iconColorType eq 'white'" spacing="9" align="center">
-              <share-btn href="{{shareurl}}%5Bpermlink_urlenc%5D" icon-src="img/icons/{{prefix}}-white-96.png" editable="{{prefix}}Text" custom-style="shareButtonStyle">Partager</btn>
+              <share-btn href="{{shareurl}}[MB3M:ENLIGNEURL]" icon-src="img/icons/{{prefix}}-white-96.png" editable="{{prefix}}Text" custom-style="shareButtonStyle">Partager</btn>
             </column-content>
             <column-content {{default}}="{{prefix}}Visible and shareButtonStyle.iconColorType eq 'black'" spacing="9" align="center">
-              <share-btn href="{{shareurl}}%5Bpermlink_urlenc%5D" icon-src="img/icons/{{prefix}}-black-96.png" editable="{{prefix}}Text" custom-style="shareButtonStyle">Partager</btn>
+              <share-btn href="{{shareurl}}[MB3M:ENLIGNEURL]" icon-src="img/icons/{{prefix}}-black-96.png" editable="{{prefix}}Text" custom-style="shareButtonStyle">Partager</btn>
             </column-content>
           </repeater>
         </columns>
